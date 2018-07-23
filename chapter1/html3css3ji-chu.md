@@ -262,14 +262,11 @@
 ```html
 <p style="color:red;"</p>
 ```
-
-写在&lt;style&gt; 元素中		
-
-	&lt;style&gt;
-
-	p{color:red}
-
-&lt;/style&gt;
+* 写在&lt;style&gt; 元素中	
+```html	
+<style>
+  p{color:red}
+</style>
 
 通过外部引入			
 
