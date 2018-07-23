@@ -145,7 +145,7 @@
 * `<meta />`  元素可提供有关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。`<meta>` 标签永远位于 head 元素内部。
 * `<link></link>` 标签定义文档与外部资源的关系。
   ```html
-  <link type="text/css" rel="stylesheet" src="style.css"></link>
+  <link rel="stylesheet" type="text/css"  src="style.css"></link>
   <link rel="shortcut icon" type="images/x-icon" href="http://www.baidu.com/favicon.ico">
   
   ```
