@@ -152,7 +152,10 @@
 * `<style></style>`  签用于为 HTML 文档定义样式信息。
 * `<script></script>`  标签用于定义客户端脚本，比如 JavaScript。script 元素既可以包含脚本语句，也可以通过 src 属性指向外部脚本文件。
   ```html
-  <script></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script>
+    alert('OK')
+  </script>
   ```
 
 
