@@ -160,6 +160,7 @@
   ```
 
 * `<style></style>`  签用于为 HTML 文档定义样式信息。
+
 * `<script></script>`  标签用于定义客户端脚本，比如 JavaScript。script 元素既可以包含脚本语句，也可以通过 src 属性指向外部脚本文件。
   ```html
   <script type="text/javascript" src="script.js"></script>
@@ -169,8 +170,10 @@
   ```
 
 ### 3.4 meta元信息
+
 * content  定义与 http-equiv 或 name 属性相关的元信息
 * name 把content属性关联到一个名称
+
   ```
   author
 
@@ -186,29 +189,30 @@
 
   others
   ```
+
 * http-equiv  把 content 属性关联到 HTTP 头部。
   ```
   content-type
   expires
   refresh
   set-cookie
-  ```   
+  ```
 * charset  字符集编码
 
 ```html
 编码字符集
 <meta charset="utf-8">  HTML5 支持 HTML5向下兼容
 <meta http-equiv="content-type" content="text/html;charset=utf-8" /> HTML 4支持
-	
+
 网页关键字：
 <meta name="keywords" content="8-12个以英文逗号隔开的单词/词语">
-	
+
 网页描述信息
 <meta name="description" content="80字以内的一段话，与网站内容相关">
 
 所有搜索引擎，抓取这个页面、爬行链接、禁止快照：  
 <meta name="robots" content="index,follow,noarchive">
-	all：文件将被检索，且页面上的链接可以被查询；
+  all：文件将被检索，且页面上的链接可以被查询；
   none：文件将不被检索，且页面上的链接不可以被查询；
   index：文件将被检索；
   follow：页面上的链接可以被查询；
@@ -231,7 +235,6 @@
 网页刷新信息：
 <meta http-equiv="refresh" content="10;url=http://www.baidu.com">  10秒后跳转到百度页面
 ```
-
 
 
 
