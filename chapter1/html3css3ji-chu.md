@@ -40,6 +40,12 @@ HTML 2.0——1995年11月作为RFC 1866发布，在RFC 2854于2000年6月发布
 
 
 ### 附：相关组织
+* IETF(The Internet Engineering Task Force)
+  国际互联网工程任务组（The Internet Engineering Task Force，简称 IETF）
+互联网工程任务组，成立于1985年底，是全球互联网最具权威的技术标准化组织，主要任务是负责互联网相关技术规范的研发和制定，当前绝大多数国际互联网技术标准出自IETF。
+
+
+    
 
 
 
