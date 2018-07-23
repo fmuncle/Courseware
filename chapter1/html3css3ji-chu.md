@@ -135,4 +135,6 @@
 <!DOCTYPE html>
 ```
 ### 3.2 HTML主体结构标签
-
+* `<html></html>`
+* `<head></head>`
+* `<body></doby>` 
