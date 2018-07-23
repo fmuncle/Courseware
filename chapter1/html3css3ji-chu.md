@@ -72,6 +72,7 @@
 * 双标签（成对）: `<标签名>内容</标签名>` 如：`<table></table>` 即分起始和结束
 * 单标签（不成对）: `<标签名 />`;  如： `<br/>`、`<hr/>`
 * 标签是大小写无关的,`<body>`;跟`<BODY>`表示意思是一样的，标准推荐使用小写，这样符合XHTML标准。
+* 对于HTML标签来讲，最重要的是语义
 
 ### 2.2 HTML标签属性
 
@@ -162,6 +163,7 @@
 * `<style></style>`  签用于为 HTML 文档定义样式信息。
 
 * `<script></script>`  标签用于定义客户端脚本，比如 JavaScript。script 元素既可以包含脚本语句，也可以通过 src 属性指向外部脚本文件。
+
   ```html
   <script type="text/javascript" src="script.js"></script>
   <script>
@@ -191,12 +193,14 @@
   ```
 
 * http-equiv  把 content 属性关联到 HTTP 头部。
+
   ```
   content-type
   expires
   refresh
   set-cookie
   ```
+
 * charset  字符集编码
 
 ```html
