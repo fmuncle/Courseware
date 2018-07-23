@@ -268,9 +268,9 @@
   p{color:red}
 </style>
 
-通过外部引入			
+* 通过外部引入			
 
-	&lt;link rel="stylesheet" type="text/css" href="./style.css"/&gt;
+<link rel="stylesheet" type="text/css" href="./style.css">
 
 @import 引入  			
 
