@@ -168,7 +168,7 @@
   </script>
   ```
 
-  ### 3.4 meta元信息
+### 3.4 meta元信息
 * content  定义与 http-equiv 或 name 属性相关的元信息
 * name 把content属性关联到一个名称
   ```
@@ -194,6 +194,8 @@
   set-cookie
   ```   
 * charset  字符集编码
+
+
 
 
 
