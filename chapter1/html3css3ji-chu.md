@@ -380,7 +380,94 @@
    .container>li {}
    ```
 
+* 组合：群组选择器
+
+   ```css
+   选择器,选择器，选择器 {
+       
+   }
+   
+   body,ul,li,p,figure,table,.item,.list-item {
+       
+   }
+   ```
+
+* 组合：多选择器
+
+   ```css
+   div.item {
+       
+   }
+   .item.list-item {
+       
+   }
+   div#container {
+       
+   }
+   ```
+
    
 
+## 6 CSS常用属性和值
 
+### 6.1 字体属性
+
+* font	
+
+  ```css	
+  font:字体风格[字体加粗]<字体大小>[/行高]<字体族科>
+  ```
+
+* font-family	字体族科   宋体|微软雅黑
+
+  ```css
+  font-family:"Arial","Helvetica",sans-serif;	
+  ```
+
+* font-size	        字体大小
+
+* font-style       字体风格  normal | italic | oblique (斜体)
+
+* font-weight	字体加粗  normal | bold | lighter	
+
+* font-variant	字体变形 normal | small-caps		
+
+### 6.2 文字颜色
+
+* color 设置文字颜色
+
+### 6.3 文本属性
+
+* letter-spacing	字母间隔  值为长度，可以是负值
+
+* word-spacing	词的间距(通过空格识别)
+
+* text-decoration    文字修饰
+
+  ```  
+  underline
+  overline
+  line-through
+  none(默认)	
+  ```
+
+* text-align	横向排列 left | right | center 
+
+* vertical-align	垂直对其方式
+
+  ```
+  baseline： 将支持valign特性的对象的内容与基线对齐 
+  sub： 垂直对齐文本的下标 
+  super： 垂直对齐文本的上标 
+  top： 将支持valign特性的对象的内容与对象顶端对齐 
+  text-top： 将支持valign特性的对象的文本与对象顶端对齐 
+  middle： 将支持valign特性的对象的内容与对象中部对齐 
+  bottom： 将支持valign特性的对象的文本与对象底端对齐 
+  text-bottom： 将支持valign特性的对象的文本与对象顶端对齐 
+  <percentage>： 用百分比指定由基线算起的偏移量。可以为负值。基线对于百分数来说就是0%。 
+  <length>： 用长度值指定由基线算起的偏移量。可以为负值。基线对于数值来说为0。（CSS2） 	
+  ```
+
+* text-indent	文本缩进  2em(2个字)   50px
+* line-height	设置行间距离 不允许使用负值
 
