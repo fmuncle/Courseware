@@ -1,6 +1,9 @@
 # HTML5/CSS3基础
+
 ## 1. HTML
+
 ### 1.1 什么是HTML
+
 * HTML是用来制作网页的标记语言 
 * HTML是Hypertext Markup Language的英文缩写,即超文本标记语言 
 * HTML语言是一种标记语言,不需要编译,直接由浏览器执行 
@@ -10,15 +13,17 @@
 * HTML是由W3C的维护的 
 * HTML 是通向 WEB 技术世界的钥匙。
 
-### 1.2 发展历史	
+### 1.2 发展历史
+
 * HTML是从2.0版本开始的，实际上没有1.0的官方规范,在1993年6月作为互联网工程工作小组（IETF）工作草案发布（并非标准）
-HTML 2.0——1995年11月作为RFC 1866发布，在RFC 2854于2000年6月发布之后被宣布已经过时
+  HTML 2.0——1995年11月作为RFC 1866发布，在RFC 2854于2000年6月发布之后被宣布已经过时
 * HTML 3.2——1997年1月14日，W3C推荐标准
 * HTML 4.0——1997年12月18日，W3C推荐标准
 * HTML 4.01（微小改进）——1999年12月24日，W3C推荐标准
 * HTML 5——2014年10月28日，W3C推荐标准
 
 ### 1.3 HTML5的由来
+
 * HTML5草案的前身名为 Web Applications 1.0，于2004年被WHATWG提出，于2007年被W3C接纳，并成立了新的 HTML 工作团队。
 * HTML 5 的第一份正式草案已于2008年1月22日公布。HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了某些 HTML5 支持。
 * 2012年12月17日，万维网联盟（W3C）正式宣布凝结了大量网络工作者心血的HTML5规范已经正式定稿。根据W3C的发言稿称：“HTML5是开放的Web网络平台的奠基石。”
@@ -26,38 +31,45 @@ HTML 2.0——1995年11月作为RFC 1866发布，在RFC 2854于2000年6月发布
 * 2014年10月29日，万维网联盟宣布，经过接近8年的艰苦努力，该标准规范终于制定完成。
 
 ### 1.4 HTML5的优点
+
 * 1、提高可用性和改进用户的友好体验；
 * 2、有几个新的标签，这将有助于开发人员定义重要的内容；
-* 3、可以给站点带来更多的多媒体元素(视频和音频)；
+* 3、可以给站点带来更多的多媒体元素\(视频和音频\)；
 * 4、可以很好的替代FLASH和Silverlight；
 * 5、当涉及到网站的抓取和索引的时候，对于SEO很友好；
 * 6、将被大量应用于移动应用程序和游戏；
 * 7、可移植性好。
 
 ### 1.5 HTML5的兼容性
+
 * Internet Explorer 9 以及 以上版本
 * chrome、Safari、opera、Firefox和各种以wekkit为内核的国产浏览器
 
-
 ### 附：相关组织
-#### IETF(The Internet Engineering Task Force)
-国际互联网工程任务组（The Internet Engineering Task Force，简称 IETF）
+
+#### IETF\(The Internet Engineering Task Force\)
+
+国际互联网工程任务组（The Internet Engineering Task Force，简称 IETF）  
 互联网工程任务组，成立于1985年底，是全球互联网最具权威的技术标准化组织，主要任务是负责互联网相关技术规范的研发和制定，当前绝大多数国际互联网技术标准出自IETF。
 
-#### W3C(World Wide Web Consortium)
-万维网联盟(World Wide Web Consortium) 
+#### W3C\(World Wide Web Consortium\)
+
+万维网联盟\(World Wide Web Consortium\)   
 万维网联盟创建于1994年，是Web技术领域最具权威和影响力的国际中立性技术标准机构。到目前为止，W3C已发布了200多项影响深远的Web技术标准及实施指南，如广为业界采用的超文本标记语言（标准通用标记语言下的一个应用）、可扩展标记语言（标准通用标记语言下的一个子集）以及帮助残障人士有效获得Web内容的信息无障碍指南（WCAG）等，有效促进了Web技术的互相兼容，对互联网技术的发展和应用起到了基础性和根本性的支撑作用。
 
+### WHATWG\(Web Hypertext Application Technology Working Group\)
 
-### WHATWG(Web Hypertext Application Technology Working Group)
-网页超文本应用技术工作小组是一个以推动网络HTML 5 标准为目的而成立的组织。
+网页超文本应用技术工作小组是一个以推动网络HTML 5 标准为目的而成立的组织。  
 在2004年，由Opera、Mozilla基金会和苹果这些浏览器厂商组成。
 
 
 
 
 
-    
+## 2 HTML基本语法
+
+
+
 
 
 
