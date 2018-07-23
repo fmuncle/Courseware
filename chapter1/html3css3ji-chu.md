@@ -269,12 +269,11 @@
 </style>
 
 * 通过外部引入			
-
+```html
 <link rel="stylesheet" type="text/css" href="./style.css">
+```
 
-@import 引入  			
 
-	@import url\("./style.css"\)
 
 
 
