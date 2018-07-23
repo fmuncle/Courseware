@@ -141,11 +141,11 @@
 
 ### 3.3 HEAD头部标签
 * `<title></title>`  定义文档标题
-* `<base />`
-* `<meta />`
-* `<link></link>`
-* `<style></style>`
-* `<script></script>`
+* `<base />`  标签为页面上的所有链接规定默认地址或默认目标
+* `<meta />`  元素可提供有关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。`<meta>` 标签永远位于 head 元素内部。
+* `<link></link>` 标签定义文档与外部资源的关系。
+* `<style></style>`  签用于为 HTML 文档定义样式信息。
+* `<script></script>`  标签用于定义客户端脚本，比如 JavaScript。script 元素既可以包含脚本语句，也可以通过 src 属性指向外部脚本文件。
 
 
 
