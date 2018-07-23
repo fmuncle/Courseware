@@ -258,17 +258,17 @@
 
 ### 4.1 使用方法
 
-* 写在标签内的style属性中	
+* 写在标签内的style属性中
 
   ```html
   <p style="color:red;"</p>
   ```
 
-   写在&lt;style&gt; 元素中	
+  写在&lt;style&gt; 元素中
 
   ```html
   <style>
-  	p {
+      p {
           color:red
       }
   </style>
@@ -282,22 +282,24 @@
 
 ### 4.2 CSS格式组成
 
-* 选择器	 负责圈定范围，要修改的元素集合
-	 声明	由属性名和属性值组成，中间用冒号连接(属性名:属性值)，用于设定具体样式
+* 选择器     负责圈定范围，要修改的元素集合
+     声明    由属性名和属性值组成，中间用冒号连接\(属性名:属性值\)，用于设定具体样式
 * CSS由选择器和一或多个声明组成，多个声明之间用分号
-```css
+  ```css
   选择器{
     属性名:属性值;
     属性名:属性值;
   }
-```
+  ```
 
 ### 4.3 CSS注释
+
 ```css
 /*注释内容*/
 ```
 
 ### 4.4 CSS基本长度单位
+
 * em 倍数 默认字体大小的倍数
 * px：pixel，像素，屏幕上显示的最小单位，用于网页设计，直观方便；%
 * 百分比
@@ -306,131 +308,140 @@
 * mm 毫米
 
 ### 4.5 CSS基本颜色单位
-* colorName 颜色名方式	red,green,blue...
 
-	 RGB十进制数字表示颜色	
+* colorName 颜色名方式    red,green,blue...
 
-   ```	
+  RGB十进制数字表示颜色
+
+  ```
    数字（1-255） rgb(255,0,0)
    百分比(1-100) rgb(100%,0,0)
-   ```
+  ```
 
 * RGB十六进制表示
 
-   ```
+  ```
    #rrggbb
    #rgb  简写
-   ```
+  ```
 
-   
-## 5 CSS选择器(基础)
-* HTML元素选择器	
+## 5 CSS选择器\(基础\)
 
-   ```css
+* HTML元素选择器
+
+  ```css
    div {
-       
+
    }
-   ```
+  ```
 
-* ID选择器	
+* ID选择器
 
-   ```css
+  ```css
    #idName {
-       
+
    }
-   ```
+  ```
 
-* CLASS选择器	
+* CLASS选择器
 
-   ```css
+  ```css
    .className {
-       
+
    }
-   ```
+  ```
 
-* 全局选择器	
+* 全局选择器
 
-   ```css
+  ```css
    * {
-       
+
    }
-   ```
+  ```
 
 * 组合: 后代元素
 
-   ```css
+  ```css
    选择器 选择器 {
-       
+
    }
    .nav li {}
    #box div {}
    div .list {}
    .container li {}
-   ```
+  ```
 
 * 组合：子元素
 
-   ```css
+  ```css
    选择器>选择器 {
-       
+
    }
    .nav>li {}
    #box>div {}
    div>.list {}
    .container>li {}
-   ```
+  ```
 
 * 组合：群组选择器
 
-   ```css
+  ```css
    选择器,选择器，选择器 {
-       
+
    }
-   
+
    body,ul,li,p,figure,table,.item,.list-item {
-       
+
    }
-   ```
+  ```
 
 * 组合：多选择器
 
-   ```css
+  ```css
    div.item {
-       
+
    }
    .item.list-item {
-       
+
    }
    div#container {
-       
+
    }
-   ```
+  ```
 
-   
+## 6 选择器优先级
 
-## 6 CSS常用属性和值
+```
+计算 选择符 中ID的数量(=a)					
+计算 选择符 中 类选择器 属性选择器 伪类选择器 的数量(=b)	
+计算选择符 中 标签选择器 伪对象选择器的数量 (=c)		
+忽略全局选择器							
+a的权重100  b的权重10   c的权重1    相加			
+```
+
+## 7 CSS常用属性和值
 
 ### 6.1 字体属性
 
-* font	
+* font
 
-  ```css	
+  ```css
   font:字体风格[字体加粗]<字体大小>[/行高]<字体族科>
   ```
 
-* font-family	字体族科   宋体|微软雅黑
+* font-family    字体族科   宋体\|微软雅黑
 
   ```css
-  font-family:"Arial","Helvetica",sans-serif;	
+  font-family:"Arial","Helvetica",sans-serif;
   ```
 
-* font-size	        字体大小
+* font-size            字体大小
 
-* font-style       字体风格  normal | italic | oblique (斜体)
+* font-style       字体风格  normal \| italic \| oblique \(斜体\)
 
-* font-weight	字体加粗  normal | bold | lighter	
+* font-weight    字体加粗  normal \| bold \| lighter
 
-* font-variant	字体变形 normal | small-caps		
+* font-variant    字体变形 normal \| small-caps
 
 ### 6.2 文字颜色
 
@@ -438,22 +449,22 @@
 
 ### 6.3 文本属性
 
-* letter-spacing	字母间隔  值为长度，可以是负值
+* letter-spacing    字母间隔  值为长度，可以是负值
 
-* word-spacing	词的间距(通过空格识别)
+* word-spacing    词的间距\(通过空格识别\)
 
 * text-decoration    文字修饰
 
-  ```  
+  ```
   underline
   overline
   line-through
-  none(默认)	
+  none(默认)
   ```
 
-* text-align	横向排列 left | right | center 
+* text-align    横向排列 left \| right \| center
 
-* vertical-align	垂直对其方式
+* vertical-align    垂直对其方式
 
   ```
   baseline： 将支持valign特性的对象的内容与基线对齐 
@@ -465,9 +476,12 @@
   bottom： 将支持valign特性的对象的文本与对象底端对齐 
   text-bottom： 将支持valign特性的对象的文本与对象顶端对齐 
   <percentage>： 用百分比指定由基线算起的偏移量。可以为负值。基线对于百分数来说就是0%。 
-  <length>： 用长度值指定由基线算起的偏移量。可以为负值。基线对于数值来说为0。（CSS2） 	
+  <length>： 用长度值指定由基线算起的偏移量。可以为负值。基线对于数值来说为0。（CSS2）
   ```
 
-* text-indent	文本缩进  2em(2个字)   50px
-* line-height	设置行间距离 不允许使用负值
+* text-indent    文本缩进  2em\(2个字\)   50px
+
+* line-height    设置行间距离 不允许使用负值
+
+
 
