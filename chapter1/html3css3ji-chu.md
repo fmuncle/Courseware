@@ -258,9 +258,26 @@
 
 ### 4.1 使用方法
 
+* 写在标签内的style属性中	
+```
+<p style="color:red;"</p>
+```
 
+写在&lt;style&gt; 元素中		
 
+	&lt;style&gt;
 
+	p{color:red}
+
+&lt;/style&gt;
+
+通过外部引入			
+
+	&lt;link rel="stylesheet" type="text/css" href="./style.css"/&gt;
+
+@import 引入  			
+
+	@import url\("./style.css"\)
 
 
 
