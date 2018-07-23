@@ -161,7 +161,21 @@
   </script>
   ```
 ### 3.4 meta元信息
-
+* content  定义与 http-equiv 或 name 属性相关的元信息
+* name 把content属性关联到一个名称
+	author
+	description
+	keywords
+	generator
+	revised
+	robots
+	others
+* http-equiv  把 content 属性关联到 HTTP 头部。
+	content-type
+	expires
+	refresh
+	set-cookie
+* charset  字符集编码
 
 
 
