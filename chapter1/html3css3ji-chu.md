@@ -189,10 +189,13 @@
 
 
 * http-equiv  把 content 属性关联到 HTTP 头部。
-    content-type
-    expires
-    refresh
-    set-cookie
+  ```
+  content-type
+  expires
+  refresh
+  set-cookie
+  ```
+      
 * charset  字符集编码
 
 
