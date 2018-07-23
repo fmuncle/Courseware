@@ -209,23 +209,27 @@
 所有搜索引擎，抓取这个页面、爬行链接、禁止快照：  
 <meta name="robots" content="index,follow,noarchive">
 	all：文件将被检索，且页面上的链接可以被查询；
+  none：文件将不被检索，且页面上的链接不可以被查询；
+  index：文件将被检索；
+  follow：页面上的链接可以被查询；
+  noindex：文件将不被检索，但页面上的链接可以被查询；
+  nofollow：文件将被检索，但页面上的链接不可以被查询；
+  noarchive：文件将被检索，但禁止保存快照；
 
-none：文件将不被检索，且页面上的链接不可以被查询；
+网页作者：
+<meta name="author" content="obama">
 
-index：文件将被检索；
+网页网页生成工具 
+<meta name="generator" content="Sublime Text3">
 
-follow：页面上的链接可以被查询；
+定义页面最新版本 
+<meta name="revised" content="David, 2008/8/8/" />
 
-noindex：文件将不被检索，但页面上的链接可以被查询；
+网页版权信息：
+<meta name="copyright" content="2009-2014©版权所有">
 
-nofollow：文件将被检索，但页面上的链接不可以被查询；
-
-noarchive：文件将被检索，但禁止保存快照；
-3.5 网页作者：<meta name="author" content="obama">
-3.6 网页网页生成工具 <meta name="generator" content="Sublime Text3">
-3.7 定义页面最新版本 <meta name="revised" content="David, 2008/8/8/" />
-3.8 网页版权信息：<meta name="copyright" content="2009-2014©版权所有">
-3.9 网页刷新信息：<meta http-equiv="refresh" content="10;url=http://www.baidu.com">  10秒后跳转到百度页面
+网页刷新信息：
+<meta http-equiv="refresh" content="10;url=http://www.baidu.com">  10秒后跳转到百度页面
 ```
 
 
