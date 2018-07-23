@@ -140,7 +140,7 @@
 * `<body></doby>` 定义文档的主体	
 
 ### 3.3 HEAD头部标签
-* `<title></title>` 
+* `<title></title>`  定义文档标题
 * `<base />`
 * `<meta />`
 * `<link></link>`
