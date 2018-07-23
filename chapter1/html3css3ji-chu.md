@@ -259,24 +259,31 @@
 ### 4.1 使用方法
 
 * 写在标签内的style属性中	
-```html
-<p style="color:red;"</p>
-```
-* 写在&lt;style&gt; 元素中	
-```html	
-<style>
-  p{color:red}
-</style>
 
-* 通过外部引入			
-```html
-<link rel="stylesheet" type="text/css" href="./style.css">
-```
+  ```html
+  <p style="color:red;"</p>
+  ```
+
+   写在&lt;style&gt; 元素中	
+
+  ```html
+  <style>
+  	p {
+          color:red
+      }
+  </style>
+  ```
+
+* 外部导入
+
+  ```html
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  ```
 
 ### 4.2 CSS格式组成
 
 * 选择器	 负责圈定范围，要修改的元素集合
-* 声明	由属性名和属性值组成，中间用冒号连接(属性名:属性值)，用于设定具体样式
+	 声明	由属性名和属性值组成，中间用冒号连接(属性名:属性值)，用于设定具体样式
 * CSS由选择器和一或多个声明组成，多个声明之间用分号
 ```css
   选择器{
@@ -300,21 +307,80 @@
 
 ### 4.5 CSS基本颜色单位
 * colorName 颜色名方式	red,green,blue...
-* RGB十进制数字表示颜色	
-```	
-数字（1-255） rgb(255,0,0)
-百分比(1-100) rgb(100%,0,0)
-```
-* RGB 十六进制方式表示颜色	
-```
-#rgb
-#rrggbb
-```
 
+	 RGB十进制数字表示颜色	
+
+   ```	
+   数字（1-255） rgb(255,0,0)
+   百分比(1-100) rgb(100%,0,0)
+   ```
+
+* RGB十六进制表示
+
+   ```
+   #rrggbb
+   #rgb  简写
+   ```
+
+   
 ## 5 CSS选择器(基础)
 * HTML元素选择器	
+
+   ```css
+   div {
+       
+   }
+   ```
+
 * ID选择器	
+
+   ```css
+   #idName {
+       
+   }
+   ```
+
 * CLASS选择器	
+
+   ```css
+   .className {
+       
+   }
+   ```
+
 * 全局选择器	
+
+   ```css
+   * {
+       
+   }
+   ```
+
+* 组合: 后代元素
+
+   ```css
+   选择器 选择器 {
+       
+   }
+   .nav li {}
+   #box div {}
+   div .list {}
+   .container li {}
+   ```
+
+* 组合：子元素
+
+   ```css
+   选择器>选择器 {
+       
+   }
+   .nav>li {}
+   #box>div {}
+   div>.list {}
+   .container>li {}
+   ```
+
+   
+
 
 
