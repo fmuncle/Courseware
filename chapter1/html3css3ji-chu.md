@@ -54,7 +54,7 @@
 
 #### W3C\(World Wide Web Consortium\)
 
-万维网联盟\(World Wide Web Consortium\)   
+万维网联盟\(World Wide Web Consortium\)  
 万维网联盟创建于1994年，是Web技术领域最具权威和影响力的国际中立性技术标准机构。到目前为止，W3C已发布了200多项影响深远的Web技术标准及实施指南，如广为业界采用的超文本标记语言（标准通用标记语言下的一个应用）、可扩展标记语言（标准通用标记语言下的一个子集）以及帮助残障人士有效获得Web内容的信息无障碍指南（WCAG）等，有效促进了Web技术的互相兼容，对互联网技术的发展和应用起到了基础性和根本性的支撑作用。
 
 ### WHATWG\(Web Hypertext Application Technology Working Group\)
@@ -62,13 +62,7 @@
 网页超文本应用技术工作小组是一个以推动网络HTML 5 标准为目的而成立的组织。  
 在2004年，由Opera、Mozilla基金会和苹果这些浏览器厂商组成。
 
-
-
-
-
 ## 2 HTML基本语法
-
-
 
 
 
