@@ -143,6 +143,9 @@
 * `<title></title>`  定义文档标题
 * `<base />`  标签为页面上的所有链接规定默认地址或默认目标
 * `<meta />`  元素可提供有关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。`<meta>` 标签永远位于 head 元素内部。
+  ```html
+  <meta charset="utf-8">
+  ```
 * `<link></link>` 标签定义文档与外部资源的关系。
   ```html
   <link rel="stylesheet" type="text/css"  href="style.css"></link>
@@ -157,7 +160,9 @@
     alert('OK')
   </script>
   ```
-  
+### 3.4 meta元信息
+
+
 
 
 
