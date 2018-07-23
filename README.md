@@ -15,6 +15,7 @@
 
 ### CSS
 * 级联样式表  Cascading Style Sheet
+* 负责页面的风格设计，样式、美观
 
 
 ### JavaScript
