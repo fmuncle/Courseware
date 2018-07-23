@@ -34,6 +34,8 @@ HTML 2.0——1995年11月作为RFC 1866发布，在RFC 2854于2000年6月发布
 * 6、将被大量应用于移动应用程序和游戏；
 * 7、可移植性好。
 
-### 1.5 HTML5的优点
+### 1.5 HTML5的兼容性
+Internet Explorer 9 以及 以上版本
+chrome、Safari、opera、Firefox和各种以wekkit为内核的国产浏览器
 
 
