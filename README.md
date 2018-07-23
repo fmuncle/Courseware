@@ -19,5 +19,10 @@
 ### JavaScript
 * 浏览器脚本语言，可以编写运行在浏览器上的程序
 * 妥妥的编程语言
-* 负责编写页面特效、调用浏览器的API(BOM)、操作改变页面内容(DOM)，从后端获取数据(Ajax),渲染页面
+* 负责编写页面特效、调用浏览器的API(BOM)、操作改变页面内容(DOM)，从后端获取数据(Ajax),渲染页面等
+* jQuery是JavaScript的一个库
+* Vue、Angular、React 等是JavaScript 框架
+
+
+
 
