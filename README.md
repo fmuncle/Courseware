@@ -7,6 +7,15 @@
 前端技术一般分为前端设计和前端开发，前端设计一般可以理解为网站的视觉设计，前端开发则是网站的前台代码实现，包括基本的HTML和CSS以及JavaScript
 
 ## 2 前端开发的技术栈
+### HTML
+* 超文本标记语言  Hyper Text Markup Language
+* “超文本”就是指页面内可以包含图片、链接，甚至音乐、程序等非文字元素
+* 负责完成页面的结构
 
-指的是超文本标记语言 (Hyper Text Markup Language)，这个也是我们网页最常用普通的语言了，经历了多个版本的发展，已经发展到5.0版了，得力于W3C建立的标准和规范，已普遍升级到了XHTML，XHTML 指可扩展超文本标签语言（EXtensible HyperText Markup Language）， XHTML 于2000年的1月26日成为 W3C 标准，是更严格更纯净的 HTML 代码，XHTML 的目标是取代 HTML。XHTML 与 HTML 4.01 几乎是相同的，XHTML 是作为一种 XML 应用被重新定义的 HTML，是一个 W3C 标准。W3C 将 XHTML 定义为最新的HTML版本。所有新的浏览器都支持 XHTML。
+
+### CSS
+* 级联样式表  Cascading Style Sheet
+
+
+### JavaScript
 
