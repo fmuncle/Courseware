@@ -103,9 +103,10 @@
 ```
 
 ### 2.5 HTML 实体 \(特殊字符\)
+
 |  | 描述 | 实体名称 | 实体编号 |
 | :--- | :--- | :--- | :--- |
-|  | 空格 |   | &\#160; |
+|  | 空格 |  | &\#160; |
 | &lt; | 小于号 | &lt; | &\#60; |
 | &gt; | 大于号 | &gt; | &\#62; |
 | & | 和号 | & | &\#38; |
@@ -122,24 +123,29 @@
 | × | 乘号 | × | &\#215; |
 | ÷ | 除号 | ÷ | &\#247; |
 
-
 ## 3 HTML常用标签
-### 3.1 文档声明	
+
+### 3.1 文档声明
+
 你可使用此声明在 Internet Explorer 6 及以后版本中切换为严格的标准兼容模式。
+
 ```html
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
- 
+
 <!DOCTYPE html>
 ```
+
 ### 3.2 HTML主体结构标签
+
 * `<html></html>` 此元素可告知浏览器其自身是一个 HTML 文档。
 * `<head></head>` 用于定义文档的头部，它是所有头部元素的容器。`<head>` 中的元素可以引用脚本、指示浏览器在哪里找到样式表、提供元信息等等。
-* `<body></doby>` 定义文档的主体	
+* `<body></doby>` 定义文档的主体    
 
 ### 3.3 HEAD头部标签
+
 * `<title></title>`  定义文档标题
 * `<base />`  标签为页面上的所有链接规定默认地址或默认目标
 * `<meta />`  元素可提供有关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。`<meta>` 标签永远位于 head 元素内部。
@@ -147,11 +153,12 @@
   <meta charset="utf-8">
   ```
 * `<link></link>` 标签定义文档与外部资源的关系。
+
   ```html
   <link rel="stylesheet" type="text/css"  href="style.css"></link>
   <link rel="shortcut icon" type="images/x-icon" href="http://www.baidu.com/favicon.ico">
-  
   ```
+
 * `<style></style>`  签用于为 HTML 文档定义样式信息。
 * `<script></script>`  标签用于定义客户端脚本，比如 JavaScript。script 元素既可以包含脚本语句，也可以通过 src 属性指向外部脚本文件。
   ```html
@@ -160,24 +167,33 @@
     alert('OK')
   </script>
   ```
-### 3.4 meta元信息
+
+  ### 3.4 meta元信息
 * content  定义与 http-equiv 或 name 属性相关的元信息
 * name 把content属性关联到一个名称
-	author
-	description
-	keywords
-	generator
-	revised
-	robots
-	others
+  ```
+  author
+
+  description
+
+  keywords
+
+  generator
+
+  revised
+
+  robots
+
+  others
+  ```
+
+
 * http-equiv  把 content 属性关联到 HTTP 头部。
-	content-type
-	expires
-	refresh
-	set-cookie
+    content-type
+    expires
+    refresh
+    set-cookie
 * charset  字符集编码
-
-
 
 
 
