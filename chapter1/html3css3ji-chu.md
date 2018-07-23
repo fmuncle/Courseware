@@ -195,6 +195,38 @@
   ```   
 * charset  字符集编码
 
+```html
+编码字符集
+<meta charset="utf-8">  HTML5 支持 HTML5向下兼容
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /> HTML 4支持
+	
+网页关键字：
+<meta name="keywords" content="8-12个以英文逗号隔开的单词/词语">
+	
+网页描述信息
+<meta name="description" content="80字以内的一段话，与网站内容相关">
+
+所有搜索引擎，抓取这个页面、爬行链接、禁止快照：  
+<meta name="robots" content="index,follow,noarchive">
+	all：文件将被检索，且页面上的链接可以被查询；
+
+none：文件将不被检索，且页面上的链接不可以被查询；
+
+index：文件将被检索；
+
+follow：页面上的链接可以被查询；
+
+noindex：文件将不被检索，但页面上的链接可以被查询；
+
+nofollow：文件将被检索，但页面上的链接不可以被查询；
+
+noarchive：文件将被检索，但禁止保存快照；
+3.5 网页作者：<meta name="author" content="obama">
+3.6 网页网页生成工具 <meta name="generator" content="Sublime Text3">
+3.7 定义页面最新版本 <meta name="revised" content="David, 2008/8/8/" />
+3.8 网页版权信息：<meta name="copyright" content="2009-2014©版权所有">
+3.9 网页刷新信息：<meta http-equiv="refresh" content="10;url=http://www.baidu.com">  10秒后跳转到百度页面
+```
 
 
 
