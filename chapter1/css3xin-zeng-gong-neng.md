@@ -418,15 +418,41 @@ radial-gradient(circle farthest-corner, #f00, #ff0, #080);
 
 ### 4.2 盒子阴影
 
-box-shadow			
-	值: none | <shadow> [ , <shadow> ]*			
-	<shadow> = inset? && <length>{2,4} && <color>?	
-	阴影			
-		none： 无阴影 
-		<length>①： 第1个长度值用来设置对象的阴影水平偏移值。可以为负值 
-		<length>②： 第2个长度值用来设置对象的阴影垂直偏移值。可以为负值 
-		<length>③： 如果提供了第3个长度值则用来设置对象的阴影模糊值。不允许负值 
-		<length>④： 如果提供了第4个长度值则用来设置对象的阴影外延值。可以为负值 
-		<color>： 设置对象的阴影的颜色。 
-		inset： 设置对象的阴影类型为内阴影。该值为空时，则对象的阴影类型为外阴影 
-	可以设定多组效果，每组参数值以逗号分隔		
+* box-shadow	设置元素的阴影
+
+  > 值: none | <shadow> [ , <shadow> ]*			
+  > <shadow> = inset? && <length>{2,4} && <color>?	
+  >
+  > 取值：
+  >
+  > ​	none： 无阴影 
+  > 	<length>①： 第1个长度值用来设置对象的阴影水平偏移值。可以为负值 
+  > 	<length>②： 第2个长度值用来设置对象的阴影垂直偏移值。可以为负值 
+  > 	<length>③： 如果提供了第3个长度值则用来设置对象的阴影模糊值。不允许负值 
+  > 	<length>④： 如果提供了第4个长度值则用来设置对象的阴影外延值。可以为负值 
+  > 	<color>： 设置对象的阴影的颜色。 
+  > 	inset： 设置对象的阴影类型为内阴影。该值为空时，则对象的阴影类型为外阴影 
+  >
+  > 可以设定多组效果，每组参数值以逗号分隔						
+
+  ``` css
+  test .outset {
+  	box-shadow: 5px 5px rgba(0, 0, 0, .6);
+  }
+  .test .outset-blur {
+  	box-shadow: 5px 5px 5px rgba(0, 0, 0, .6);
+  }
+  .test .outset-extension {
+  	box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, .6);
+  }
+  .test .inset {
+  	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .6) inset;
+  }
+  .test .multiple-shadow {
+  	box-shadow:
+  		0 0 5px 3px rgba(255, 0, 0, .6),
+  		0 0 5px 6px rgba(0, 182, 0, .6),
+  		0 0 5px 10px rgba(255, 255, 0, .6);
+  }	
+  ```
+* 
