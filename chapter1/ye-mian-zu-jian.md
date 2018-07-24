@@ -13,7 +13,7 @@
 
 ### 1.2 css内边距
 
-* padding		     内边距
+* padding	内边距
 * padding-left	     左内边距
 * padding-right     右内边距
 * padding-top	      上内边距
