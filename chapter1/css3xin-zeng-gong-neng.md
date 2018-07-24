@@ -390,3 +390,43 @@ radial-gradient(circle farthest-corner, #f00, #ff0, #080);
 
 
 
+
+
+## 4 CSS3新增边框和背景属性
+
+### 4.1 边框圆角
+
+* border-radius			
+
+  > 设置或检索对象使用圆角边框。提供2个参数，2个参数以“/”分隔，每个参数允许设置1~4个参数值，第1个参数表示水平半径，第2个参数表示垂直半径，如第2个参数省略，则默认等于第1个参数 
+  > 水平半径：如果提供全部四个参数值，将按上左(top-left)、上右(top-right)、下右(bottom-right)、下左(bottom-left)的顺序作用于四个角。 
+  > 如果只提供一个，将用于全部的于四个角。 
+  > 如果提供两个，第一个用于上左(top-left)、下右(bottom-right)，第二个用于上右(top-right)、下左(bottom-left)。 
+  > 如果提供三个，第一个用于上左(top-left)，第二个用于上右(top-right)、下左(bottom-left)，第三个用于下右(bottom-right)。 
+  >
+  > 垂直半径也遵循以上4点。 
+
+* border-top-left-radius		设置或检索对象的左上角圆角边框
+
+* border-top-right-radius	设置或检索对象的右上角圆角边框
+
+* border-bottom-right-radius	设置或检索对象的右下角圆角边框
+
+* border-bottom-left-radius	   设置或检索对象的左下角圆角边框
+
+
+
+### 4.2 盒子阴影
+
+box-shadow			
+	值: none | <shadow> [ , <shadow> ]*			
+	<shadow> = inset? && <length>{2,4} && <color>?	
+	阴影			
+		none： 无阴影 
+		<length>①： 第1个长度值用来设置对象的阴影水平偏移值。可以为负值 
+		<length>②： 第2个长度值用来设置对象的阴影垂直偏移值。可以为负值 
+		<length>③： 如果提供了第3个长度值则用来设置对象的阴影模糊值。不允许负值 
+		<length>④： 如果提供了第4个长度值则用来设置对象的阴影外延值。可以为负值 
+		<color>： 设置对象的阴影的颜色。 
+		inset： 设置对象的阴影类型为内阴影。该值为空时，则对象的阴影类型为外阴影 
+	可以设定多组效果，每组参数值以逗号分隔		
