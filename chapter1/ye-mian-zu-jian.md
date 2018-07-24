@@ -51,15 +51,15 @@
   例：background:red url('./123.png') no-repeat 100px 10px;
   ```
 
-	 background-color	设置背景色，或设置为transparent（透明）
+* background-color	设置背景色，或设置为transparent（透明）
 
-	 background-image	背景图片 url  或者 none
+* background-image	背景图片 url  或者 none
 
-	 background-repeat	背景重复  repeat | repeat-x | repeat-y | no-repeat
+* background-repeat	背景重复  repeat | repeat-x | repeat-y | no-repeat
 
-	 background-attachment	背景附件 scroll | fixed
+* background-attachment	背景附件 scroll | fixed
 
-	 background-position		背景位置
+* background-position		背景位置
 
   ```
   background-position: 水平方向 垂直方向
