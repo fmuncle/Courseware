@@ -172,5 +172,221 @@
 
 
 
-## 2 
+## 2 CSS3 基本功能
+
+### 2.1 CSS3新增长度单位
+
+* rem  **相对于根元素(即html元素)font-size计算值的倍数**
+* vm  **视口被均分为100单位的vw**
+* vh  **视口被均分为100单位的vh**
+* vmax **相对于视口的宽度或高度中较大的那个。其中最大的那个被均分为100单位的vmax**
+* vmin **相对于视口的宽度或高度中较小的那个。其中最小的那个被均分为100单位的vmin**
+
+### 2.2 CSS3新增颜色单位
+
+* RGBA(R,G,B,A)    A：Alpha透明度。取值0~1之间。
+
+* HSL(H,S,L)   
+
+  > H:  Hue(色调)。0(或360)表示红色，120表示绿色，240表示蓝色，也可取其他数值来指定颜色。取值为：0 - 360
+  >
+  > S：Saturation(饱和度)。取值为：0.0% - 100.0%
+  >
+  > L：Lightness(亮度)。取值为：0.0% - 100.0%
+
+* HSLA(H,S,L,A)
+
+### 2.3 CSS3渐变(了解)
+
+#### 线性渐变
+
+**语法**
+
+```
+<linear-gradient> = linear-gradient([ [ <angle> | to <side-or-corner> ] ,]? <color-stop>[, <color-stop>]+)
+
+<side-or-corner> = [left | right] || [top | bottom]
+
+<color-stop> = <color> [ <length> | <percentage> ]?
+```
+
+**取值**
+
+```
+<angle>：用角度值指定渐变的方向（或角度）。
+	to left： 设置渐变为从右到左。相当于: 270deg
+	to right：设置渐变从左到右。相当于: 90deg
+	to top：  设置渐变从下到上。相当于: 0deg
+	to bottom： 设置渐变从上到下。相当于: 180deg。这是默认值，等同于留空不写。
+<color-stop> 用于指定渐变的起止颜色：
+	<color>：  指定颜色。
+	<length>： 用长度值指定起止色位置。不允许负值
+	<percentage>： 用百分比指定起止色位置。
+```
+
+**示例**
+
+```css
+linear-gradient(#fff, #333);
+linear-gradient(to bottom, #fff, #333);
+linear-gradient(to top, #333, #fff);
+linear-gradient(180deg, #fff, #333);
+linear-gradient(to bottom, #fff 0%, #333 100%);
+```
+
+#### 径向渐变
+
+**语法**
+
+```
+<radial-gradient> = radial-gradient([ [ <shape> || <size> ] [ at <position> ]? , | at <position>, ]?<color-stop>[ , <color-stop> ]+)
+
+<position> = [ <length>① | <percentage>① | left | center① | right ]? [ <length>② | <percentage>② | top | center② | bottom ]?
+
+<shape> = circle | ellipse
+
+<size> = <extent-keyword> | [ <circle-size> || <ellipse-size> ]
+
+<extent-keyword> = closest-side | closest-corner | farthest-side | farthest-corner
+
+<circle-size> = <length>
+
+<ellipse-size> = [ <length> | <percentage> ]{2}
+
+<shape-size> = <length> | <percentage>
+
+<color-stop> = <color> [ <length> | <percentage> ]?
+```
+
+**取值**
+
+```
+<position> 确定圆心的位置。如果提供2个参数，第一个表示横坐标，第二个表示纵坐标；如果只提供一个，第二值默认为50%，即center
+	<percentage>①：用百分比指定径向渐变圆心的横坐标值。可以为负值。
+	<length>①：用长度值指定径向渐变圆心的横坐标值。可以为负值。
+	left：设置左边为径向渐变圆心的横坐标值。
+	center①：设置中间为径向渐变圆心的横坐标值。
+	right：设置右边为径向渐变圆心的横坐标值。
+	<percentage>②：用百分比指定径向渐变圆心的纵坐标值。可以为负值。
+	<length>②：用长度值指定径向渐变圆心的纵坐标值。可以为负值。
+	top：设置顶部为径向渐变圆心的纵坐标值。
+	center②：设置中间为径向渐变圆心的纵坐标值。
+	bottom：设置底部为径向渐变圆心的纵坐标值。
+
+<shape> 确定圆的类型
+	circle：指定圆形的径向渐变
+	ellipse：指定椭圆形的径向渐变。
+
+<extent-keyword> circle | ellipse 都接受该值作为 size
+	closest-side：指定径向渐变的半径长度为从圆心到离圆心最近的边
+	closest-corner：指定径向渐变的半径长度为从圆心到离圆心最近的角
+	farthest-side：指定径向渐变的半径长度为从圆心到离圆心最远的边
+	farthest-corner：指定径向渐变的半径长度为从圆心到离圆心最远的角
+
+<circle-size> circle 接受该值作为 size
+	<length>：用长度值指定正圆径向渐变的半径长度。不允许负值。
+
+<ellipse-size> ellipse 接受该值作为 size
+	<length>：用长度值指定椭圆径向渐变的横向或纵向半径长度。不允许负值。
+	<percentage>：用百分比指定椭圆径向渐变的横向或纵向半径长度。不允许负值。
+
+<color-stop> 用于指定渐变的起止颜色：
+	<color>：指定颜色。
+	<length>：用长度值指定起止色位置。不允许负值
+	<percentage>：用百分比指定起止色位置。不允许负值
+```
+
+**示例**
+
+```css
+radial-gradient(circle, #f00, #ff0, #080);
+radial-gradient(circle at center, #f00, #ff0, #080);
+radial-gradient(circle at 50%, #f00, #ff0, #080);
+radial-gradient(circle farthest-corner, #f00, #ff0, #080);
+```
+
+
+
+## 3 CSS3 新增基本属性
+
+### 3.1 布局相关属性
+
+* box-sizing	定义盒子模型的尺寸解析方式
+
+  >content-box(默认)	
+  >border-box		
+
+* resize	否允许用户缩放，调节元素尺寸大小
+
+  >none： 不允许用户调整元素大小。 (默认)
+  >both： 用户可以调节元素的宽度和高度。 
+  >horizontal： 用户可以调节元素的宽度 	
+  >vertical： 用户可以调节元素的高度。 	
+
+* display	盒子是否以及如何显示
+
+  > none： 隐藏对象。与visibility属性的hidden值不同，其不为被隐藏的对象保留其物理空间 
+  > inline： 指定对象为内联元素。 
+  > block： 指定对象为块元素。 
+  > list-item： 指定对象为列表项目。 
+  > inline-block： 指定对象为内联块元素。（CSS2） 
+  > table： 指定对象作为块元素级的表格。类同于html标签<table>（CSS2） 
+  > inline-table： 指定对象作为内联元素级的表格。类同于html标签<table>（CSS2） 
+  > table-caption： 指定对象作为表格标题。类同于html标签<caption>（CSS2） 
+  > table-cell： 指定对象作为表格单元格。类同于html标签<td>（CSS2） 
+  > table-row： 指定对象作为表格行。类同于html标签<tr>（CSS2） 
+  > table-row-group： 指定对象作为表格行组。类同于html标签<tbody>（CSS2） 
+  > table-column： 指定对象作为表格列。类同于html标签<col>（CSS2） 
+  > table-column-group： 指定对象作为表格列组显示。类同于html标签<colgroup>（CSS2） 
+  > table-header-group： 指定对象作为表格标题组。类同于html标签<thead>（CSS2） 
+  > table-footer-group： 指定对象作为表格脚注组。类同于html标签<tfoot>（CSS2）
+  >
+  > run-in： 根据上下文决定对象是内联对象还是块级对象。（CSS3） 
+  >
+  > box： 将对象作为弹性伸缩盒显示。（伸缩盒最老版本）（CSS3） 
+  > inline-box： 将对象作为内联块级弹性伸缩盒显示。（伸缩盒最老版本）（CSS3） 
+  > flexbox： 将对象作为弹性伸缩盒显示。（伸缩盒过渡版本）（CSS3） 
+  > inline-flexbox： 将对象作为内联块级弹性伸缩盒显示。（伸缩盒过渡版本）（CSS3） 
+  > flex： 将对象作为弹性伸缩盒显示。（伸缩盒最新版本）（CSS3） 
+  > inline-flex： 将对象作为内联块级弹性伸缩盒显示。（伸缩盒最新版本）（CSS3） 
+
+​		
+
+### 3.2 外轮廓
+
+- outline	给元素周围绘制一条轮廓线
+
+  ```css
+  <' outline-width '> || <' outline-style '> || <' outline-color '>
+  ```
+
+- outline-width  外廓线宽度
+
+  > <length>： 用长度值来定义轮廓的厚度。不允许负值 
+  > medium： 定义默认宽度的轮廓。 
+  > thin： 定义比默认宽度细的轮廓。 
+  > thick： 定义比默认宽度粗的轮廓。 	
+
+- outline-style	外廓线风格
+
+  > none： 无轮廓。与任何指定的 <' outline-width '> 值无关 
+  > dotted： 点状轮廓。 
+  > dashed： 虚线轮廓。 
+  > solid： 实线轮廓 
+  > double： 双线轮廓。两条单线与其间隔的和等于指定的 <' outline-width '> 值 
+  > groove： 3D凹槽轮廓。 
+  > ridge： 3D凸槽轮廓。 
+  > inset： 3D凹边轮廓。 
+  > outset： 3D凸边轮廓。 	
+
+- outline-color	  外廓线颜色
+- outline-offset  外廓线的偏移量
+
+
+
+### 3.3 颜色
+
+* opacity  检索或设置对象的不透明度。  对于尚不支持opacity属性的IE浏览器可以使用IE私有的滤镜属性来实现与opacity相同的效果 
+
+
 
