@@ -4,7 +4,7 @@
 
 ### 1.1 css尺寸相关属性
 
-* height		 高度
+* height	高度
 * min-height	最小高度
 * max-height	最大高度
 * width		宽度
