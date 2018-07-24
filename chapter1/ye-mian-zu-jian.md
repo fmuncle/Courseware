@@ -27,7 +27,7 @@
   border: 边框宽度  边框样式  边框颜色
   ```
 
-	 border-style	    border-top-style | border-right-style | border-bottom-style | border-left-style
+* border-style	    border-top-style | border-right-style | * border-bottom-style | border-left-style
 
   ```
   dotted   点线
