@@ -2,7 +2,19 @@
 
 ## 1 页面组成
 
+
+
 ## 2 布局相关的标签
+
+* `<div></div>`  定义文档中的分区或节
+* `<span></span>`  这是一个行内元素，没有任何意义
+* `<header></header>` **HTML5新增** 定义 section 或 page 的页眉
+* `<footer></footer>` **HTML5新增** 定义 section 或 page 的页脚
+*  `<main></main>` **HTML5新增**  标签规定文档的主要内容。`<main>` 元素中的内容对于文档来说应当是唯一的。它不应包含在  文档中重复出现的内容，比如侧栏、导航栏、版权信息、站点标志或搜索表单。IE都不识别
+* `<nav></nav>`  **HTML5新增** 表示链接导航部分  如果文档中有“前后”按钮，则应该把它放到 <nav> 元素中
+* `<section></section>`  **HTML5新增** 定义文档中的节 通常不推荐那些没有标题的内容使用section
+* `<article></article>`  **HTML5新增** 定义文章  论坛帖子 报纸文章 博客条目 用户评论
+* `<aside></aside>` **HTML5新增** 相关内容，相关辅助信息，如侧边栏
 
 ## 3 盒子模型
 
@@ -38,14 +50,18 @@ CSS盒模型本质上是一个盒子，封装周围的HTML元素，它包括：�
 #### 内联元素
 
 * **和其他元素都在一行上**；				
-
 	 高，行高及外边距和内边距部分可改变；		
-
 	 宽度只与内容有关；					
-
 	 行内元素只能容纳文本或者其他行内元素。		
-
 	 外边界只能对左右起作用，内边距都起作用		
+
+#### 块级元素和内联元素的转换
+
+```css
+display: block | inline | inline-block
+```
+
+
 
   
 
@@ -61,12 +77,86 @@ CSS盒模型本质上是一个盒子，封装周围的HTML元素，它包括：�
 
 2. 块级元素总是以块的形式表现出来，并且跟同级的兄弟块依次竖直排列，左右自动伸展，直到包含它的元素的边界，在水平方向不能并排。
 
-#### 盒子在标准流中的定位原则	 
+	### 盒子在标准流中的定位原则	 
 
-1. 行内元素之间的水平margin				
-2. 块级元素之间的竖直margin  (margin的塌陷)		
-3. 嵌套盒子之间的margin, (子元素父元素margin合并)	
-4. 将margin设置为负值					
+	. 行内元素之间的水平margin				
+	. 块级元素之间的竖直margin  (margin的塌陷)		
+	. 嵌套盒子之间的margin, (子元素父元素margin合并)	
+	. 将margin设置为负值					
+
+
+
+### 3.3 盒子模型相关CSS属性
+
+#### 布局属性
+
+* display
+
+  | 值           | 描述                                                 |
+  | ------------ | ---------------------------------------------------- |
+  | none         | 此元素不会被显示。                                   |
+  | block        | 此元素将显示为块级元素，此元素前后会带有换行符。     |
+  | inline       | 默认。此元素会被显示为内联元素，元素前后没有换行符。 |
+  | inline-block | 行内块元素。（CSS2.1 新增的值）                      |
+
+* float
+
+  | 值      | 描述                                                 |
+  | ------- | ---------------------------------------------------- |
+  | left    | 元素向左浮动。                                       |
+  | right   | 元素向右浮动。                                       |
+  | none    | 默认值。元素不浮动，并会显示在其在文本中出现的位置。 |
+  | inherit | 规定应该从父元素继承 float 属性的值。                |
+
+* clear
+
+  | 值      | 描述                                  |
+  | ------- | ------------------------------------- |
+  | left    | 在左侧不允许浮动元素。                |
+  | right   | 在右侧不允许浮动元素。                |
+  | both    | 在左右两侧均不允许浮动元素。          |
+  | none    | 默认值。允许浮动元素出现在两侧。      |
+  | inherit | 规定应该从父元素继承 clear 属性的值。 |
+
+	 visibility	     
+
+  | 值       | 描述                                                         |
+  | -------- | ------------------------------------------------------------ |
+  | visible  | 默认值。元素是可见的。                                       |
+  | hidden   | 元素是不可见的。                                             |
+  | collapse | 当在表格元素中使用时，此值可删除一行或一列，但是它不会影响表格的布局。被行或列占据的空间会留给其他内容使用。如果此值被用在其他的元素上，会呈现为 "hidden"。 |
+  | inherit  | 规定应该从父元素继承 visibility 属性的值。                   |
+
+	 overflow	   
+
+  | 值      | 描述                                                     |
+  | ------- | -------------------------------------------------------- |
+  | visible | 默认值。内容不会被修剪，会呈现在元素框之外。             |
+  | hidden  | 内容会被修剪，并且其余内容是不可见的。                   |
+  | scroll  | 内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容。 |
+  | auto    | 如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。 |
+  | inherit | 规定应该从父元素继承 overflow 属性的值。                 |
+
+	 overflow-x	
+
+	 overflow-y	
+
+#### 尺寸
+
+* width / max-width / min-width
+* height / max-height / min-height
+
+#### 内补白
+
+* padding / padding-left / padding-right / padding-top / padding-bottom
+
+#### 外边距
+
+* margin		
+	 margin-left	
+	 margin-right	
+	 margin-top	
+* margin-bottom
 
 
 
@@ -147,7 +237,7 @@ clear: right
 
 ### 4.6 浮动布局小案例
 
-
+![image-20180724171641303](../images/layout.png)
 
 
 
@@ -210,11 +300,73 @@ clear: right
 ### 5.5 定位相关CSS属性总结
 
 * position	static(默认值) /relative /position /fixed
-* top		
-* left		
-* right		
-* bottom		
-* z-index	auto(默认值)/数字
+	 top		
+	 left		
+	 right		
+	 bottom		
+	 z-index	auto(默认值)/数字
+
+
+
+## 6 浏览器兼容性
+
+### 6.1 浏览器分类
+
+#### 主流浏览器(原生浏览器)
+
+拥有独立内核的浏览器 被称为主流浏览器
+
+* chrome   内核 blink   早期的chrome使用apple的开源内核 webkit. 我们依然习惯上称呼chrome的内核为webkit
+* safari       内核 webkit  
+* IE              内核 Trident
+* Firfox       内核 Gecko
+* Opera      v12.17以前采用 Presto 内核。后来紧跟chrome的步伐，使用chrome的内核 成为了壳浏览器
+
+#### 壳浏览器
+
+在某浏览器内核之上增加相应的辅助功能，并改变其名称与外观的浏览器
+
+opera、360安全、360极速、UC、搜狗、猎豹、QQ浏览器、2345浏览器、淘宝浏览器 等
+
+
+
+### 6.2 浏览器对HTML5和CSS3的兼容性情况
+
+* HTML5需要 IE9以及以上版本的IE浏览器支持
+* CSS3不同的模块对浏览器的兼容程度各不相同。 对于IE浏览器，肯定需要IE9以及以上的浏览器支持
+* chrome、firefox浏览器一般都会自动更新，所以兼容性特别棒！
+* 手机浏览器，大多使用webkit内核，兼容性较好。关键是 手机上没有IE！
+* 目前的国产浏览器，多采用双内核，使用chrome内核的时候兼容性较好
+
+
+
+### 6.3 兼容技巧
+
+#### 设置IE使用最新的渲染引擎
+
+```html
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+```
+
+#### 让双核浏览器默认使用webkit内核	 
+
+```html
+<meta name="renderer" content="webkit"> 
+```
+
+#### 让IE8识别HTML5新增标签
+
+```html
+<!--[if lt IE 9]>
+    <script src="/html5shiv/dist/html5shiv.js"></script>
+<![endif]-->
+```
+
+
+
+
+
+
 
 
 
