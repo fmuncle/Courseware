@@ -38,7 +38,7 @@
   inset      内嵌效果
   outset   外凸效果 
   ```
-	 border-color	 边框颜色   border-left-color | border-right-color | border-top-color | border-bottom-color
+* border-color	 边框颜色   border-left-color | border-right-color | border-top-color | border-bottom-color
 * border-width    边框宽度  border-left-width | border-right-width | border-top-width | border-bottom-width
 
 ### 1.4 背景
@@ -50,16 +50,11 @@
   
   例：background:red url('./123.png') no-repeat 100px 10px;
   ```
-
-	 background-color	设置背景色，或设置为transparent（透明）
-
-	 background-image	背景图片 url  或者 none
-
-	 background-repeat	背景重复  repeat | repeat-x | repeat-y | no-repeat
-
-	 background-attachment	背景附件 scroll | fixed
-
-	 background-position		背景位置
+* background-color	设置背景色，或设置为transparent（透明）
+* background-image	背景图片 url  或者 none
+* background-repeat	背景重复  repeat | repeat-x | repeat-y | no-repeat
+* background-attachment	背景附件 scroll | fixed
+* background-position		背景位置
 
   ```
   background-position: 水平方向 垂直方向
