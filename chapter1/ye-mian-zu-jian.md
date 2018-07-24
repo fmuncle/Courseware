@@ -28,7 +28,6 @@
   ```
 
 * border-style	    border-top-style | border-right-style | * border-bottom-style | border-left-style
-
   ```
   dotted   点线
   dashed  虚线
