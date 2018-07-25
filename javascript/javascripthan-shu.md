@@ -191,7 +191,8 @@ var u = new User('鲁迅', 45)
 
 ### 3.3 this
 
-
+* this表示方法 所属的对象
+* 全局函数中的this 指向 window
 
 ### 3.4 原型和原型链
 
