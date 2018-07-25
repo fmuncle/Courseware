@@ -760,8 +760,87 @@ transform:translate(-50%, -50%) rotate(45deg);
 > <keyframes-blocks>：[ [ from | to | <percentage> ]{ sRules } ][ [ , from | to | ]{ sRules } ]*
 
 ```css
+@keyframes testanimations {
+	from { opacity: 1; }
+	to { opacity: 0; }
+}
 
+@keyframes testanimations {
+	from { transform: translate(0, 0); }
+	20% { transform: translate(20px, 20px); }
+	40% { transform: translate(40px, 0); }
+	60% { transform: translate(60px, 20); }
+	80% { transform: translate(80px, 0); }
+	to { transform: translate(100px, 20px); }
+}
+
+@keyframes testanimations{
+	0% { transform: translate(0, 0); }
+	20% { transform: translate(20px, 20px); }
+	40% { transform: translate(40px, 0); }
+	60% { transform: translate(60px, 20px); }
+	80% { transform: translate(80px, 0); }
+	100% { transform: translate(100px, 20px); }
+}
 ```
 
+#### 相关属性
+
+* animation	设置对象所应用的动画特效
+
+  > 如果提供多组属性值，以逗号进行分隔。 
+  >
+  > 注意：如果只提供一个<time>参数，则为 <' animation-duration '> 的值定义；如果提供二个<time>参数，则第一个为 <' animation-duration '> 的值定义，第二个为 <' animation-delay '> 的值定义 
+  >
+  > 用法
+  > 	animation： <single-animation-name> || <time> || <single-animation-timing-function> || <time> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state>	
+
+* animation-name	设置对象所应用的动画名称
+
+  > 必须与规则@keyframes配合使用，因为动画名称由@keyframes定义 
+
+* animation-duration	设置对象动画的持续时间
+
+* animation-timing-function	 设置对象动画的过渡类型
+
+  > ease： (默认)平滑过渡。等同于贝塞尔曲线(0.25, 0.1, 0.25, 1.0) 
+  > linear： 线性过渡。等同于贝塞尔曲线(0.0, 0.0, 1.0, 1.0) 
+  > ease-in： 由慢到快。等同于贝塞尔曲线(0.42, 0, 1.0, 1.0) 
+  > ease-out： 由快到慢。等同于贝塞尔曲线(0, 0, 0.58, 1.0) 
+  > ease-in-out： 由慢到快再到慢。等同于贝塞尔曲线(0.42, 0, 0.58, 1.0) 
+  > step-start： 等同于 steps(1, start) 
+  > step-end： 等同于 steps(1, end) 
+  > steps(<integer>[, [ start | end ] ]?)： 接受两个参数的步进函数。第一个参数必须为正整数，指定函数的步数。第二个参数取值可以是start或end，指定每一步的值发生变化的时间点。第二个参数是可选的，默认值为end。 
+  > cubic-bezier(<number>, <number>, <number>, <number>)： 特定的贝塞尔曲线类型，4个数值需在[0, 1]区间内 	
+
+* animation-delay		指定对象动画的延迟时间
+
+* animation-iteration-count	  指定动画的具体循环次数
+
+  > number:动画循环次数
+  > infinite： 无限循环 
+
+* animation-direction	设置对象动画在循环中是否反向运动 
+
+  > normal： 正常方向 (默认)
+  > reverse： 反方向运行 
+  > alternate： 动画先正常运行再反方向运行，并持续交替运行 
+  > alternate-reverse： 动画先反运行再正方向运行，并持续交替运行 
+
+* animation-play-state	设置对象动画的状态
+
+  > running： 运动 (默认)
+  > paused： 暂停 
+
+* animation-fill-mode	设置对象动画时间之外的状态 
+
+  > none		默认值。动画在动画执行之前和之后不会应用任何样式到目标元素。
+  > forwards 	在动画结束后（由 animation-iteration-count 决定），动画将应用该属性值。
+  > backwards	动画将应用在 animation-delay 定义期间启动动画的第一次迭代的关键帧中定义的属性值。这些都是from 				关键帧中的值（当 animation-direction 为 "normal" 或 "alternate" 时）或 to 关键帧中的值（当 animation-direction 为 "reverse" 或 "alternate-reverse" 时）。
+  > both		动画遵循 forwards 和 backwards 的规则。也就是说，动画会在两个方向上扩展动画属性。
+
+​	
 
 
+
+​	
