@@ -9,9 +9,10 @@
   * [第五章 新的页面布局方式](chapter1/xin-de-ye-mian-bu-ju-fang-shi.md)
   * [第六章 响应式页面设计](chapter1/xiang-ying-shi-ye-mian-she-ji.md)
 * [JavaScript](javascript.md)
-  * JavaScript基础语法
-  * JavaScript函数
-  * JavaScript对象
+  * [JavaScript基础语法](javascript/javascriptji-chu-yu-fa.md)
+  * [JavaScript函数](javascript/javascripthan-shu.md)
+  * [JavaScript对象](javascript/javascriptdui-xiang.md)
+  * [事件Event](javascript/shi-jian-event.md)
   * 浏览器对象模型BOM
   * 文档对象模型DOM
 * [BOM/DOM](bomdom.md)
