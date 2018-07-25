@@ -170,8 +170,16 @@
     CSS-Code;
 }
 
-@media (media feature)
+@media (media feature) {
+    CSS-Code;
+}
 ```
+
+### 4.4 媒体查询语法
+
+
+
+
 
 
 
