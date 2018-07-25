@@ -17,5 +17,10 @@
   * [第一章 浏览器对象模型BOM](bomdom/liu-lan-qi-dui-xiang-mo-xing-bom.md)
   * [第二章 文档对象模型DOM](bomdom/wen-dang-dui-xiang-mo-xing-dom.md)
 * [jQuery](jquery.md)
+  * 第一章 jQuery基础
+  * 第二章 jQuery选择器和筛选器
+  * 第三章 jQuery文档属性和样式操作
+  * 第四章 jQuery事件和效果
+  * 第五章 jQuery插件机制
 * [BootStrap](bootstrap.md)
 
