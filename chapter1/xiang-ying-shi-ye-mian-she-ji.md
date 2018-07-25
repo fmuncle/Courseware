@@ -185,5 +185,41 @@
 
 
 
+## 5 响应式图片
+
+* 设置图片宽度百分比	
+
+* 使用背景图片		
+
+  > paddint-top
+  > background-size
+
+* 使用H5  <picture>标签	
+
+  ```html
+  <picture>
+  	<source srcset="./images/banner01-small.jpg" media="(max-width:768px)">
+  	<source srcset="./images/banner01_middle.jpg" media="(max-width:992px)">
+  	<source srcset="./images/banner01.jpg">
+  	<img src="./images/banner01.jpg" alt="">
+  </picture>
+  ```
+
+* 使用 picturefill 插件	
+
+  ```html
+  <span data-picture data-alt="响应式图片">
+  	<span data-src="./images/banner01-small.jpg"></span>
+  	<span data-src="./images/banner01_middle.jpg" data-media="(min-width:768px)"></span>
+  	<span data-src="./images/banner01.jpg" data-media="(min-width:992px)"></span>
+  </span>
+  ```
+
+  
+
+  ​	
+
+
+
 
 
