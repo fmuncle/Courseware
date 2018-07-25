@@ -153,8 +153,11 @@
 #### 用法一
 
 ```html
-
+<link rel="stylesheet" media="mediatype" href="mystylesheet.css">
+<link rel="stylesheet" media="mediatype and (media feature)" href="mystylesheet.css">
 ```
+
+#### 用法二
 
 
 
