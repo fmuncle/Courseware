@@ -186,7 +186,32 @@
 
 ## 5 断点设置
 
+### 5.1 常用设置一
 
+三个断点： 768px   992px   1200px
+
+* 手机 超小屏幕    <= 768px		
+* 平板 小屏幕	   769px ~ 992px	
+* 中等屏幕	      993px ~ 1200px	
+* 大屏幕	      > 1200px		
+
+### 5.2 常用设置二
+
+四个断点： 576px  768px  992px   1200px
+
+* 超小屏幕	   <=576px
+* 小屏幕       577px ~ 768px
+* 中等屏幕   769px ~ 992px
+* 大屏幕      993px ~ 1200px
+* 超大屏幕   >1200px
+
+### 5.3 推荐设置三
+
+两个断点： 640px   1024px
+
+* 小屏幕	<=640px
+* 中等屏幕  641px ~ 1024px
+* 大屏幕   >1024px
 
 
 
@@ -195,12 +220,13 @@
 
 * 设置图片宽度百分比	
 
-	 使用背景图片		
+* 使用背景图片
 
-  > paddint-top
-  > background-size
+   > paddint-top
+   >
+   > background-size		
 
-* 使用H5  <picture>标签	
+* 使用H5  `<picture>` 标签	
 
   ```html
   <picture>
@@ -211,7 +237,7 @@
   </picture>
   ```
 
-	 使用 picturefill 插件	
+* 使用 picturefill 插件	
 
   ```html
   <span data-picture data-alt="响应式图片">
