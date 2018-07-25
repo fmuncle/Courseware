@@ -845,3 +845,57 @@ transform:translate(-50%, -50%) rotate(45deg);
 
 ## 6 CSS3嵌入WEB字体
 
+### 6.1 什么是@font-face	 
+
+* 可以把字体放置在服务器上,而不受制于客户端系统字体			
+* 浏览器会根据指定的命令将对应的字体下载到本地缓存			
+* 1998年@font-face加入到css2中, 但css2.1中又被移出,css3重新加入	
+* IE兼容性极好
+
+### 6.2 @font-face语法
+
+#### 格式
+
+```css
+@font-face { 
+	font-family: <identifier>; 
+	src: <fontsrc> [<string>] [, <fontsrc> [<string>]]*; 
+	[<font>];
+ }																			
+```
+
+#### 相关参数	 
+
+* identifier	字体名称						
+
+* url		      此值指的是你自定义的字体的存放路径，可以是相对路径也可以是绝路径 
+
+* string	 字体的格式，主要用来帮助浏览器识别, format(fontType) 		
+
+  > truetype		.ttf	
+  > 	Firefox3.5+ Chrome 4+ Safari 3+ Opear10+ IOS Mobile Safari 4.2+ IE9+
+  > opentype	.otf	
+  > 	Firefox3.5+ Chrome 4+ Safari 3+ Opear10+ IOS Mobile Safari 4.2+
+  > Web Open Font Format	.woff	
+  > 	Firefox 3.5+ Chrome 6+ Safari 3.6+ Opera 11.1+ IE9+
+  > embedded Open Type	.eot	
+  > 	IE4+
+  > svg	 .svg	
+  > 	Chrome 4+ Safari 3.1 + Opera 10+ IOS Mobile Safari 3.2+	
+
+
+
+* font	 定义字体相关样式
+
+  > font-weight	
+  > font-style	
+  > font-size	
+  > font-variant	
+  >
+  > font-stretch			
+
+
+
+
+
+​		
