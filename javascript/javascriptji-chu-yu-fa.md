@@ -491,5 +491,103 @@ while (true) {
 
 
 
+## 6 流程控制语句
+
+### 6.1 条件语句(分支结构)
+
+#### 单向分支 if
+
+```js
+if (表达式) {
+    code...
+}
+```
+
+#### 双向分支 if...else
+
+```js
+if (表达式) {
+    code...
+} else {
+    code...
+}
+```
+
+#### 多向分支 if... else if
+
+```js
+if (表达式) {
+    code...
+} else if (表达式) {
+    code...
+} else if (表达式) {
+    code...
+} else {
+    code...
+}
+```
+
+#### 多向分支 switch...case
+
+```js
+switch (表达式) {
+    case 表达式可能的值: code....; break;
+    case 表达式可能的值: code....; break;
+    case 表达式可能的值: code....; break;
+    case 表达式可能的值: code....; break;
+    default: code....;
+}
+```
+
+#### 分支结构嵌套
+
+```js
+if (表达式) {
+    if (表达式) {
+        code....
+    }
+    code ...
+} else {
+    code...
+}
+```
+
+
+
+### 6.2 循环
+
+#### while 循环
+
+```js
+while (循环条件) {
+    code...
+}
+```
+
+#### do...while循环
+
+```js
+do {
+    code...
+} while (循环条件)
+```
+
+#### for 循环
+
+```js
+for (循环变量; 循环条件; 循环变量变化) {
+    code ...
+}
+    
+//循环输出 0-10
+for (var i = 0; i <= 10; i ++) {
+	console.log(i)
+}
+```
+
+
+
+
+
 
 
