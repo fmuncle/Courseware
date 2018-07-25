@@ -9,6 +9,11 @@
   * [第五章 新的页面布局方式](chapter1/xin-de-ye-mian-bu-ju-fang-shi.md)
   * [第六章 响应式页面设计](chapter1/xiang-ying-shi-ye-mian-she-ji.md)
 * [JavaScript](javascript.md)
+  * JavaScript基础语法
+  * JavaScript函数
+  * JavaScript对象
+  * 浏览器对象模型BOM
+  * 文档对象模型DOM
 * [BOM/DOM](bomdom.md)
 * [jQuery](jquery.md)
 * [BootStrap](bootstrap.md)
