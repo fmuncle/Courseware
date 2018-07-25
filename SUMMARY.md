@@ -23,7 +23,7 @@
   * [第四章 jQuery事件和效果](jquery/di-si-zhang-jquery-shi-jian-he-xiao-guo.md)
   * [第五章 jQuery插件机制](jquery/di-wu-zhang-jquery-cha-jian-ji-zhi.md)
 * [BootStrap](bootstrap.md)
-  * Bootstrap布局
-  * Bootstrap组件
-  * Bootstrap插件
+  * [第一章 Bootstrap布局](bootstrap/bootstrapbu-ju.md)
+  * 第二章 Bootstrap组件
+  * [第三章 Bootstrap插件](bootstrap/bootstrapcha-jian.md)
 
