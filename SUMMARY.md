@@ -14,6 +14,8 @@
   * [第三章 JavaScript内置对象](javascript/javascriptdui-xiang.md)
   * [第四章 事件Event](javascript/shi-jian-event.md)
 * [BOM/DOM](bomdom.md)
+  * [浏览器对象模型BOM](bomdom/liu-lan-qi-dui-xiang-mo-xing-bom.md)
+  * 文档对象模型DOM
 * [jQuery](jquery.md)
 * [BootStrap](bootstrap.md)
 
