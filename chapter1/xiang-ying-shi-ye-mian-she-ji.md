@@ -94,21 +94,24 @@
 
 * aspect-ratio		可视窗口宽高比   min/max
 
-	 device-aspect-ratio	设备的宽高比   min/max
+* device-aspect-ratio	设备的宽高比   min/max
 
-	 orientation	设备的使用方向
+* orientation	设备的使用方向
 
-  > landscape (水平方向)
-  > portrait（垂直方向 ）		
+   > landscape (水平方向)
+   >
+   > portrait（垂直方向 ）		
 
 * width  可视窗口的宽度   max/min
+
 * device-width  设备的宽度   max/min
-	 height	可视窗口的高度   max/min
+   height	可视窗口的高度   max/min
+
 * device-height  设备的高度   max/min
 
-	 resolution	屏幕密度 单位dppx   max/min
+* resolution	屏幕密度 单位dppx   max/min
 
-  > webkit内核请使使用 -webkit-min-device-pixel-ratio	
+   > webkit内核请使使用 -webkit-min-device-pixel-ratio	
 
 | 值                      | 描述                                                         |
 | ----------------------- | ------------------------------------------------------------ |
