@@ -13,8 +13,6 @@
   * [JavaScript函数和对象](javascript/javascripthan-shu.md)
   * [JavaScript内置对象](javascript/javascriptdui-xiang.md)
   * [事件Event](javascript/shi-jian-event.md)
-  * [浏览器对象模型BOM](javascript/liu-lan-qi-dui-xiang-mo-xing-bom.md)
-  * [文档对象模型DOM](javascript/wen-dang-dui-xiang-mo-xing-dom.md)
 * [BOM/DOM](bomdom.md)
 * [jQuery](jquery.md)
 * [BootStrap](bootstrap.md)
