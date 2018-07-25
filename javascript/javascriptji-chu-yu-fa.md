@@ -2,6 +2,240 @@
 
 ## 1 谈谈 JavaScript
 
+JavaScript，通常会简称为'JS', 是一种浏览器脚本语言
+### 1.1 JavaScript 编程语言特点
+* JavaScript是一种脚本编程语言		
+
+	 JavaScript是一种解释性语言		 
+
+	 Javas的语法结构与C++、java十分类似	
+
+	 JavaScript是弱类型语言			
+
+	 JavaScript是事件驱动的语言		
+
+	 JavaScript是一种基于对象的语言 	
+
+	 JavaScript具有跨平台性。		
+
+	 JavaScript具有安全性与简单性		
+
+   
+
+### 1.2 JavaScript的发展历史 
+
+* 1990年底，欧洲核能研究组织（CERN）科学家Tim Berners-Lee，发明了万维网（World Wide Web）.
+* 1992年底，美国国家超级电脑应用中心（NCSA）开始开发一个独立的浏览器，叫做Mosaic。
+* 1994年10月，NCSA的一个主要程序员Marc Andreessen联合风险投资家Jim Clark，成立了Mosaic通信公司，不久后改名为Netscape(网景)。
+* 1994年12月，Netscape发布浏览器Navigator1.0，市场份额一举超过90%。
+* 1995年 Netscape 程序员 Brendan Eich 设计出了LiveScript1.0  后来 改名 JavaScript
+* 1996年3月，Navigator 2.0浏览器正式内置了JavaScript脚本语言。
+* 1996年8月，微软模仿JavaScript开发了一种相近的语言，取名为JScript, 内置于IE3.0
+* 1996年11月，网景公司决定将JavaScript提交给欧洲计算机制造联合会ECMA，希望JavaScript能够成为国际标准，以此抵抗微软。
+* 1997年7月，ECMA组织发布262号标准文件（ECMA-262）的第一版，规定了浏览器脚本语言的标准，并将这种语言称为ECMAScript。这个版本就是ECMAScript 1.0版。
+* 1998年6月，ECMAScript 2.0版发布。
+* 1999年12月，ECMAScript 3.0版发布
+* 2008年7月，由于对于下一个版本应该包括哪些功能，各方分歧太大，争论过于激进，ECMA开会决定，中止ECMAScript 4.0的开发，将其中涉及现有功能改善的一小部分，发布为ECMAScript 3.1
+* 2009年12月，ECMAScript 5.0版正式发布。
+* 2011年6月，ECMAscript 5.1版发布，并且成为ISO国际标准
+* 2015年6月17日，ECMAScript 6发布正式版本，即ECMAScript 2015
+* 此后，每年6月ECMAScript 都会发布新的版本 (ES2016、ES2017、ES2018)
+
+
+
+### 1.3 JavaScript 应用领域
+
+* WEB前端 (页面特效，页面渲染)
+
+* WEB后端 (Node.js)
+
+* Hybrid App(混合App) 
+
+* 桌面应用  如 网易有道的产品、豌豆荚
+
+* 游戏 (Cocos2d.js、Unity3D)
+
+  
+
+### 1.4 JavaScript 组成部分
+
+* ECMAScript 核心语法 (ActionScript有使用ECMAScript语法)
+* BOM 浏览器对象模型
+* DOM 文档对象模型
+
+
+
+## 2 JavaScript基本语法
+
+### 2.1 在HTML中使用
+
+* 在`<script>`标签内 写代码
+
+  ```html
+  <script>
+      alert('hello world')
+  </script>
+  ```
+
+* 引入外部 脚本文件
+
+  ```html
+  <script src="./script.js"></script>
+  ```
+
+* 通过事件属性定义在元素内部
+
+  ```html
+  <button onclick="alert('啊，好疼啊')">点我啊</button>
+  ```
+
+
+
+### 2.2 JavaScript 注释
+
+* 单行注释
+
+  ```js
+  // 我是注释
+  ```
+
+* 多行注释
+
+  ```js
+  /*
+   多行注释
+  */
+  ```
+
+  
+
+### 2.3 指令(语句)结束符
+
+```js
+alert('大家好');
+alert('大家好');
+
+alert('大家好')
+alert('大家好')
+alert('大家好')
+```
+
+
+
+### 2.4 输出内容
+
+```js
+document.write('你是不是喜欢我?');  //直接输出到页面
+console.log('hello world');  //控制台输出
+```
+
+
+
+### 2.5 变量
+
+```js
+//javascript 使用var 关键字定义变量
+var username = 'xiaolili'
+```
+
+**变量名命名规范**
+
+```
+标识符必须 由 "数字","字母", "_"  或者 "$" 组成,并且不能以数字 开头
+标识符不能与保留字冲突
+区分大小写
+```
+
+**保留字**
+
+|          |           |            |           |              |
+| -------- | --------- | ---------- | --------- | ------------ |
+| abstract | arguments | boolean    | break     | byte         |
+| case     | catch     | char       | class*    | const        |
+| continue | debugger  | default    | delete    | do           |
+| double   | else      | enum*      | eval      | export*      |
+| extends* | false     | final      | finally   | float        |
+| for      | function  | goto       | if        | implements   |
+| import*  | in        | instanceof | int       | interface    |
+| let      | long      | native     | new       | null         |
+| package  | private   | protected  | public    | return       |
+| short    | static    | super*     | switch    | synchronized |
+| this     | throw     | throws     | transient | true         |
+| try      | typeof    | var        | void      | volatile     |
+| while    | with      | yield      |           |              |
+
+
+
+##  3 第一个JavaScript 程序
+
+* 三个基本弹框	
+
+  ```js
+  alert()
+  confirm()
+  prompt()
+  ```
+
+* 获取HTML中的DOM元素
+
+  ```js
+  document.getElementById()	
+  ```
+
+* 元素的应用	得到元素的属性
+
+* 事件的应用	触发了事件在执行某段代码
+
+* 函数的应用	
+
+* 运算符的应用		
+* 添加改变元素的内容		 
+
+
+
+## 4 JavaScript 数据类型
+
+### 4.1 数据类型
+
+JavaScript的数据类型分为原始类型和对象类型，这里我们先来了解原始类型
+
+#### 原始类型
+
+* 数字 Number	
+* 字符串  String	
+* 布尔值  Boolean
+* 空  null		
+* 未定义  undefind
+
+#### 对象类型
+
+数组  Array、函数  Function、日期  Date	、正则  RegExp、错误  Error、对象 Object等
+
+#### 函数监测
+
+```
+typeof(100)
+typeof(username)
+```
+
+
+
+### 4.2 数字 Number
+
+#### 定义
+
+* 十进制表示			
+* 十六进制表示			
+* 科学计数法表示	
+
+#### 浮点精度问题
+
+```js
+
+```
+
+
+
 
 
 
