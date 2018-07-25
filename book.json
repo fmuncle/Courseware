@@ -1,5 +1,12 @@
 {
     "title": "前端开发",
     "author": "付铭",
-    "description": "Python全栈-前端开发"
+    "description": "Python全栈-前端开发",
+    "plugins": ["atoc"],
+    "pluginsConfig": {
+        "atoc": {
+            "addClass": true,
+            "className": "atoc"
+        }
+    }
 }
