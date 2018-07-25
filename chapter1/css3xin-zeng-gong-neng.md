@@ -39,106 +39,106 @@
 
 * `E:link`
 
-​	设置超链接a在未被访问前的样式。 
+		设置超链接a在未被访问前的样式。 
 	注意，a:hover 必须位于 a:link 和 a:visited 之后，a:active 必须位于 a:hover 之后
 
 * `E:visited`
 
-​	设置超链接a在其链接地址已被访问过时的样式。 
+		设置超链接a在其链接地址已被访问过时的样式。 
 
 * `E:hover`
 
-​	设置元素在其鼠标悬停时的样式。 
+		设置元素在其鼠标悬停时的样式。 
 
 * `E:active`
 
-​	设置元素在被用户激活（在鼠标点击与释放之间发生的事件）时的样式。
+		设置元素在被用户激活（在鼠标点击与释放之间发生的事件）时的样式。
 
 * `E:focus`
 
-​	设置对象在成为输入焦点（该对象的onfocus事件发生）时的样式。
+		设置对象在成为输入焦点（该对象的onfocus事件发生）时的样式。
 
 #### 目标伪类选择器
 
 * `E:target`
 
-​	匹配相关URL指向的E元素。 
+		匹配相关URL指向的E元素。 
 
 #### 语言伪类选择器
 
 * `E:lang(fr)`
 
-​	匹配使用特殊语言的E元素
+		匹配使用特殊语言的E元素
 
 #### UI元素伪类选择器
 
 * `E:checked`
 
-​	匹配用户界面上处于选中状态的元素E。(用于input type为radio与checkbox时) 
+		匹配用户界面上处于选中状态的元素E。(用于input type为radio与checkbox时) 
 
 * `E:enabled`
 
-​	匹配用户界面上处于可用状态的表单元素
+		匹配用户界面上处于可用状态的表单元素
 
 * `E:disabled`
 
-​	匹配用户界面上处于禁用状态的表单元素
+		匹配用户界面上处于禁用状态的表单元素
 
 #### 结构伪类选择器
 
 * `E:root`
 
-​	匹配E元素在文档的根元素。在HTML中，根元素永远是HTML 
+		匹配E元素在文档的根元素。在HTML中，根元素永远是HTML 
 
 * `E:first-child`
 
-​	匹配父元素的第一个子元素E。 
+		匹配父元素的第一个子元素E。 
 
 * `E:last-child`
 
-​	匹配父元素的最后一个子元素E。 
+		匹配父元素的最后一个子元素E。 
 
 * `E:only-child`
 
-​	匹配父元素仅有的一个子元素E。
+		匹配父元素仅有的一个子元素E。
 
 * `E:nth-child(n)`
 
-​	匹配父元素的第n个子元素E，假设该子元素不是E，则选择符无效。
+		匹配父元素的第n个子元素E，假设该子元素不是E，则选择符无效。
 
 * `E:nth-last-child(n)`
 
-​	匹配父元素的倒数第n个子元素E，假设该子元素不是E，则选择符无效。
+		匹配父元素的倒数第n个子元素E，假设该子元素不是E，则选择符无效。
 
 * `E:first-of-type`
 
-​	匹配同类型中的第一个同级兄弟元素E
+		匹配同类型中的第一个同级兄弟元素E
 
 * `E:last-of-type`
 
-​	匹配同类型中的最后一个同级兄弟元素E
+		匹配同类型中的最后一个同级兄弟元素E
 
 * `E:only-of-type`
 
-​	匹配同类型中的唯一的一个同级兄弟元素E
+		匹配同类型中的唯一的一个同级兄弟元素E
 
 * `E:nth-of-type(n)`
 
-​	匹配同类型中的第n个同级兄弟元素E
+		匹配同类型中的第n个同级兄弟元素E
 
 * `E:nth-last-of-type(n)`
 
-​	匹配同类型中的倒数第n个同级兄弟元素E
+		匹配同类型中的倒数第n个同级兄弟元素E
 
 * `E:empty`
 
-​	匹配没有任何子元素（包括text节点）的元素E
+		匹配没有任何子元素（包括text节点）的元素E
 
 #### 否定伪类选择器
 
 * `E:not(s)`
 
-​	匹配不含有s选择符的元素E
+		匹配不含有s选择符的元素E
 
 
 
@@ -146,27 +146,27 @@
 
 * `E:first-letter/E::first-letter`
 
-​	设置对象内的第一个字符的样式。 
+		设置对象内的第一个字符的样式。 
 
 * `E:first-line/E::first-line` 
 
-​	设置对象内的第一行的样式。
+		设置对象内的第一行的样式。
 
 * `E:before/E::before` 
 
-​	设置在对象前（依据对象树的逻辑结构）发生的内容。用来和content属性一起使用
+		设置在对象前（依据对象树的逻辑结构）发生的内容。用来和content属性一起使用
 
 * `E:after/E::after`
 
-​	设置在对象后（依据对象树的逻辑结构）发生的内容。用来和content属性一起使用
+		设置在对象后（依据对象树的逻辑结构）发生的内容。用来和content属性一起使用
 
 * `E::placeholder` 
 
-​	设置对象文字占位符的样式。 
+		设置对象文字占位符的样式。 
 
 * `E::selection` 
 
-​	设置对象被选择时的样式。 
+		设置对象被选择时的样式。 
 
 
 
@@ -316,14 +316,14 @@ radial-gradient(circle farthest-corner, #f00, #ff0, #080);
   >content-box(默认)	
   >border-box		
 
-* resize	否允许用户缩放，调节元素尺寸大小
+	 resize	否允许用户缩放，调节元素尺寸大小
 
   >none： 不允许用户调整元素大小。 (默认)
   >both： 用户可以调节元素的宽度和高度。 
   >horizontal： 用户可以调节元素的宽度 	
   >vertical： 用户可以调节元素的高度。 	
 
-* display	盒子是否以及如何显示
+	 display	盒子是否以及如何显示
 
   > none： 隐藏对象。与visibility属性的hidden值不同，其不为被隐藏的对象保留其物理空间 
   > inline： 指定对象为内联元素。 
@@ -350,7 +350,7 @@ radial-gradient(circle farthest-corner, #f00, #ff0, #080);
   > flex： 将对象作为弹性伸缩盒显示。（伸缩盒最新版本）（CSS3） 
   > inline-flex： 将对象作为内联块级弹性伸缩盒显示。（伸缩盒最新版本）（CSS3） 
 
-​		
+	​		
 
 ### 3.2 外轮廓
 
@@ -367,7 +367,7 @@ radial-gradient(circle farthest-corner, #f00, #ff0, #080);
   > thin： 定义比默认宽度细的轮廓。 
   > thick： 定义比默认宽度粗的轮廓。 	
 
-- outline-style	外廓线风格
+	 outline-style	外廓线风格
 
   > none： 无轮廓。与任何指定的 <' outline-width '> 值无关 
   > dotted： 点状轮廓。 
@@ -379,7 +379,7 @@ radial-gradient(circle farthest-corner, #f00, #ff0, #080);
   > inset： 3D凹边轮廓。 
   > outset： 3D凸边轮廓。 	
 
-- outline-color	  外廓线颜色
+	 outline-color	  外廓线颜色
 - outline-offset  外廓线的偏移量
 
 
@@ -406,13 +406,13 @@ radial-gradient(circle farthest-corner, #f00, #ff0, #080);
   >
   > 垂直半径也遵循以上4点。 
 
-* border-top-left-radius		设置或检索对象的左上角圆角边框
+	 border-top-left-radius		设置或检索对象的左上角圆角边框
 
-* border-top-right-radius	设置或检索对象的右上角圆角边框
+	 border-top-right-radius	设置或检索对象的右上角圆角边框
 
-* border-bottom-right-radius	设置或检索对象的右下角圆角边框
+	 border-bottom-right-radius	设置或检索对象的右下角圆角边框
 
-* border-bottom-left-radius	   设置或检索对象的左下角圆角边框
+	 border-bottom-left-radius	   设置或检索对象的左下角圆角边框
 
 
 
@@ -455,4 +455,91 @@ radial-gradient(circle farthest-corner, #f00, #ff0, #080);
   		0 0 5px 10px rgba(255, 255, 0, .6);
   }	
   ```
-* 
+
+* box-reflect   倒影  （仅webkit  了解）
+
+  > 值: box-reflect：none | <direction> <offset>? <mask-box-image>?
+  >
+  > 取值：
+  >
+  > direction		
+  > 	above： 指定倒影在对象的上边 
+  > 	below： 指定倒影在对象的下边 
+  > 	left： 指定倒影在对象的左边 
+  > 	right： 指定倒影在对象的右边 
+  > offset			
+  > 	<length>： 用长度值来定义倒影与对象之间的间隔。可以为负值 
+  > 	<percentage>： 用百分比来定义倒影与对象之间的间隔。可以为负值 
+  > mask-box-image	
+  > 	none： 无遮罩图像 
+  > 	<url>： 使用绝对或相对地址指定遮罩图像。 
+  > 	<linear-gradient>： 使用线性渐变创建遮罩图像。 
+  > 	<radial-gradient>： 使用径向(放射性)渐变创建遮罩图像。 
+  > 	<repeating-linear-gradient>： 使用重复的线性渐变创建背遮罩像。 
+  > 	<repeating-radial-gradient>： 使用重复的径向(放射性)渐变创建遮罩图像。 
+
+### 4.3 CSS3新增背景属性
+
+```css
+background: bg-image bg-position / bg-size bg-repeat bg-attachment bg-origin bg-clip bg-color
+```
+
+* background-origin  背景图片原点
+
+  > 取值：
+  >
+  > padding-box：(默认值) 从padding区域（含padding）开始显示背景图像。 
+  > border-box： 从border区域（含border）开始显示背景图像。 
+  > content-box： 从content区域开始显示背景图像。 
+
+* backgroun-clip   指定对象的背景图像向外裁剪的区域。  
+
+  > 取值：
+  >
+  > padding-box： 从padding区域（不含padding）开始向外裁剪背景。 
+  > border-box： (默认值)从border区域（不含border）开始向外裁剪背景。 
+  > content-box： 从content区域开始向外裁剪背景。 
+  > text： 从前景内容的形状（比如文字）作为裁剪区域向外裁剪，如此即可实现使用背景作为填充色之类的遮罩效果
+
+* background-size  背景图像的尺寸
+
+  > <length>： 用长度值指定背景图像大小。不允许负值。 
+  > <percentage>： 用百分比指定背景图像大小。不允许负值。 
+  > auto： 背景图像的真实大小。 
+  > cover： 将背景图像等比缩放到完全覆盖容器，背景图像有可能超出容器。 
+  > contain： 将背景图像等比缩放到宽度或高度与容器的宽度或高度相等，背景图像始终被包含在容器内。 
+
+* CSS3多背景
+
+  ```css
+  background:url(test1.jpg) no-repeat scroll 10px 20px/50px 60px content-box padding-box,
+  	   	   url(test1.jpg) no-repeat scroll 10px 20px/70px 90px content-box padding-box,
+  	       url(test1.jpg) no-repeat scroll 10px 20px/110px 130px content-box padding-box #aaa;
+  ```
+
+  
+
+### 4.4 CSS3边框图片(了解)
+
+* border-image	
+
+  > border-image：<' border-image-source '> || <' border-image-slice '> [ / <' border-image-width '> | / <' border-image-width '>? / <' border-image-outset '> ]? || <' border-image-repeat '
+  >
+  > 复合属性。设置或检索对象的边框样式使用图像来填充。  
+
+* border-image-source	设置或检索对象的边框样式使用图像路径。 值: url
+
+*  border-image-slice	设置或检索对象的边框背景图的分割方式。 值: 浮点数/百分比
+
+* border-image-width	设置或检索对象的边框厚度。值: 长度值/百分比/浮点数
+
+* border-image-outset   设置或检索对象的边框背景图的扩展   值: 长度值/浮点数
+
+* border-image-repeat   设置或检索对象的边框图像的平铺方式。 
+
+  > 值:
+  > stretch： 指定用拉伸方式来填充边框背景图。 
+  > repeat： 指定用平铺方式来填充边框背景图。当图片碰到边界时，如果超过则被截断。 
+  > round： 指定用平铺方式来填充边框背景图。图片会根据边框的尺寸动态调整图片的大小直至正好可以铺满整个边框。 
+  > space： 指定用平铺方式来填充边框背景图。图片会根据边框的尺寸动态调整图片的之间的间距直至正好可以铺满整个边框。 	
+
