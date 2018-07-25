@@ -184,12 +184,18 @@
 
 
 
+## 5 断点设置
 
-## 5 响应式图片
+
+
+
+
+
+## 6 响应式图片
 
 * 设置图片宽度百分比	
 
-* 使用背景图片		
+	 使用背景图片		
 
   > paddint-top
   > background-size
@@ -205,7 +211,7 @@
   </picture>
   ```
 
-* 使用 picturefill 插件	
+	 使用 picturefill 插件	
 
   ```html
   <span data-picture data-alt="响应式图片">
@@ -215,9 +221,8 @@
   </span>
   ```
 
-  
 
-  ​	
+
 
 
 
