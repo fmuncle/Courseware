@@ -26,7 +26,7 @@
 
 * 分辨率 resolutio		是指显示器所能显示的像素的多少
 
-* 像素密度		单位： dpi（dots per inch）  ppi
+	 像素密度		单位： dpi（dots per inch）  ppi
 
   > 像素密度（pixels per inch），也称PPi，即每英寸屏幕所拥有的像素数，像素密度越大，显示画面细节就越丰富。 
   > 像素密度=√{（长度像素数^2+宽度像素数^2）}/ 屏幕尺寸
@@ -39,9 +39,9 @@
 
   > 用 iPhone4 举个例子，它有 326 DPI 显示屏，根据上表，智能手机的典型观看距离大概16.8英寸，基准像素为 160 DPI。所以要显示一个 CSS 像素，苹果选择将像素比设置为2，所以看起来就和 163 DPI 手机中显示的一样了。	
 
-* 设备像素比(dip或dpr)		同 dppx
+	 设备像素比(dip或dpr)		同 dppx
 
-* 视网膜屏幕	
+	 视网膜屏幕	
 
   > ​        视网膜（Retina）屏幕是苹果公司在部分移动产品使用的一种屏幕。第一次被人们熟知，是苹果将其用在iphone 4手机上，它将960×640的分辨率压缩到一个3.5英寸的显示屏内。也就是说，该屏幕的像素密度达到326像素/英寸（ppi），称之为“视网膜屏幕”。通常电脑显示屏幕的分辨率为72ppi，iPhone 4的分辨率为电脑的4倍多。由于其具备超高像素密度的液晶屏，因此屏幕显示异常清晰、锐利。		
 
@@ -94,19 +94,19 @@
 
 * aspect-ratio		可视窗口宽高比   min/max
 
-* device-aspect-ratio	设备的宽高比   min/max
+	 device-aspect-ratio	设备的宽高比   min/max
 
-* orientation	设备的使用方向
+	 orientation	设备的使用方向
 
   > landscape (水平方向)
   > portrait（垂直方向 ）		
 
 * width  可视窗口的宽度   max/min
 * device-width  设备的宽度   max/min
-* height	可视窗口的高度   max/min
+	 height	可视窗口的高度   max/min
 * device-height  设备的高度   max/min
 
-* resolution	屏幕密度 单位dppx   max/min
+	 resolution	屏幕密度 单位dppx   max/min
 
   > webkit内核请使使用 -webkit-min-device-pixel-ratio	
 
@@ -151,5 +151,11 @@
 ###4.3  媒体查询用法
 
 #### 用法一
+
+```html
+
+```
+
+
 
 
