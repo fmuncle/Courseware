@@ -134,13 +134,126 @@ function demo(){
 
 使用`let`关键字声明的变量会具有块状作用域
 
-```j&#39;s
+```js
 for (let i = 0; i < 10; i ++) {
     
 }
 
-console.log(i) //变量不存在
+console.log(i) //变量不存在 Uncaught ReferenceError: i is not defined
 ```
+
+
+
+## 3 JavaScript 对象 
+
+### 3.1 Object类型
+
+#### 创建
+
+* 直接量
+
+  ```js
+  var obj = {name:'xiaolili', age:100, getInfo:function(
+             	console.log(this.age)
+             )}
+  ```
+
+* new 构造函数
+
+  ```js
+  var obj = new Object()
+  obj.name = 'xiaolili'
+  obj.age = 100
+  ```
+
+#### 属性操作
+
+* 读取或修改属性
+
+  ```js
+  console.log(obj.name)
+  obj.name = 'lili'
+  
+  console.log(obj['name'])
+  obj['name'] = 'honghong'
+  ```
+
+* 删除属性
+
+  ```js
+  delete obj['name']
+  delete obj.name
+  ```
+
+* 监测属性是否出存在
+
+  ```js
+  'name' in obj
+  ```
+
+
+
+### 3.2 声明类(构造函数)
+
+```js
+function User(name, age){
+    this.name = name
+    this.age = age
+    
+    this.getInfo = function(){
+        console.log(this.name, this.age)
+    }
+}
+
+var u = new User('鲁迅', 45)
+```
+
+* 每个对象都有一个属性 `.constructor` 从而获取其构造函数
+* 使用运算符`instanceof `可以判断一个对象是否属于某个构造函数
+
+
+
+### 3.3 原型和原型链
+
+#### 什么是原型		
+
+每一个JavaScript对象都和另一个对象相关联, 并从另一个对象继承属性,另一个对象就是"原型"	
+用直接量创建的对象 都具有同一个原型对象 Object.prototype					
+
+#### 原型链			
+
+对象的原型也有原型,构成了原型链		
+
+#### 获取原型		
+
+```
+构造函数.prototype	
+对象.__proto__	
+```
+
+#### 给原型添加属性或方法	
+
+给原型添加属性和方法，以该对象为原型的对象 都可以使用该方法
+
+#### 检测属性 是自有属性还是继承自原型的属性
+
+```js
+obj.hasOwnProperty(proName)	
+```
+
+#### 创建对象时指定原型
+
+```js
+Object.create(原型对象) 
+```
+
+​	
+
+
+
+
+
+
 
 
 
