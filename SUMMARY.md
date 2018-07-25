@@ -7,6 +7,7 @@
   * [页面布局](chapter1/ye-mian-bu-ju.md)
   * [CSS3新增功能](chapter1/css3xin-zeng-gong-neng.md)
   * [新的页面布局方式](chapter1/xin-de-ye-mian-bu-ju-fang-shi.md)
+  * [响应式页面设计](chapter1/xiang-ying-shi-ye-mian-she-ji.md)
 * [JavaScript](javascript.md)
 * [BOM/DOM](bomdom.md)
 * [jQuery](jquery.md)
