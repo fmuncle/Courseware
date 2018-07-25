@@ -136,6 +136,9 @@ console.log('hello world');  //控制台输出
 ```js
 //javascript 使用var 关键字定义变量
 var username = 'xiaolili'
+
+//ES6 中新增 let关键字
+let userage = 100
 ```
 
 **变量名命名规范**
@@ -240,13 +243,39 @@ console.log(.1 + .2)
 
 超过范围，会显示为 Infinity(正无穷) 或 -Infinity(负无穷)	
 
+```js
+isFinite()	//函数判断是否在范围内
+```
+
 #### 特殊的Number值 NaN
 
-表示Not A Number
+表示Not A Number，类型是Number 但又不是常规的数字
 
 和任何值都不相等		
 
 与任何值运算,结果还是NaN	
+
+```js
+isNaN()	//函数 判读是否是 NaN	
+```
+
+
+
+### 4.3 字符串 String
+
+#### 声明方式
+
+* 双引号
+
+* 单引号
+
+* 模板字符串
+
+  ```js
+  content = ``
+  ```
+
+  
 
 
 
