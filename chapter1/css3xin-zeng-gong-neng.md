@@ -527,11 +527,11 @@ background: bg-image bg-position / bg-size bg-repeat bg-attachment bg-origin bg-
   >
   > 复合属性。设置或检索对象的边框样式使用图像来填充。  
 
-* border-image-source	设置或检索对象的边框样式使用图像路径。 值: url
+	 border-image-source	设置或检索对象的边框样式使用图像路径。 值: url
 
-*  border-image-slice	设置或检索对象的边框背景图的分割方式。 值: 浮点数/百分比
+	  border-image-slice	设置或检索对象的边框背景图的分割方式。 值: 浮点数/百分比
 
-* border-image-width	设置或检索对象的边框厚度。值: 长度值/百分比/浮点数
+	 border-image-width	设置或检索对象的边框厚度。值: 长度值/百分比/浮点数
 
 * border-image-outset   设置或检索对象的边框背景图的扩展   值: 长度值/浮点数
 
@@ -547,7 +547,7 @@ background: bg-image bg-position / bg-size bg-repeat bg-attachment bg-origin bg-
 
 ## 5 CSS3变换/过渡/动画
 
-### 5.1 变化(transform)
+### 5.1 变换(transform)
 
 #### 相关属性
 
@@ -597,7 +597,7 @@ background: bg-image bg-position / bg-size bg-repeat bg-attachment bg-origin bg-
   > 	left  right  center   <lenght>  <percentage>
   > 	top bottom  center   <lenght>  <percentage>	
 
-* transform-style	
+	 transform-style	
 
   > 指定某元素的子元素是（看起来）位于三维空间内，还是在该元素所在的平面内被扁平化。 
   > flat： (默认)指定子元素位于此元素所在平面内 
@@ -623,7 +623,7 @@ background: bg-image bg-position / bg-size bg-repeat bg-attachment bg-origin bg-
   > 	left  right  center   <lenght>  <percentage>
   > 	top bottom  center   <lenght>  <percentage>	
 
-* backface-visibility	
+	 backface-visibility	
 
   > 指定元素背面面向用户时是否可见。
   > 决定一个元素背面面向用户时是否可见，需要直接在该元素上定义 <' backface-visibility '> 属性，而不能在其父元素上，因为该属性默认为不可继承。 
@@ -636,14 +636,14 @@ background: bg-image bg-position / bg-size bg-repeat bg-attachment bg-origin bg-
 ##### 2D位移
 
 * translate(x, y)	
-* translatex()	
-* translatey()	
+	 translatex()	
+	 translatey()	
 
 ##### 2D缩放
 
 * scale(x, y)	
-* scalex()		
-* scaley()		
+	 scalex()		
+	 scaley()		
 
 ##### 2D旋转
 
@@ -652,8 +652,8 @@ background: bg-image bg-position / bg-size bg-repeat bg-attachment bg-origin bg-
 ##### 2D倾斜
 
 * skew(x,y)	
-* skewx()		
-* skewy()		
+	 skewx()		
+	 skewy()		
 
 ##### 2D矩阵
 
@@ -666,12 +666,12 @@ background: bg-image bg-position / bg-size bg-repeat bg-attachment bg-origin bg-
 * translate3d(x, y, z)
 * translatez()
 
-##### 3D缩放	
+	#### 3D缩放	
 
 * scale3d()
 * scalez()
 
-##### 3D旋转	
+	#### 3D旋转	
 
 * rotate3d(x, y, z, a)
 * rotatex()
@@ -683,6 +683,85 @@ background: bg-image bg-position / bg-size bg-repeat bg-attachment bg-origin bg-
 * matrix3d()
 
 #### 多重变形
+
+```css
+-webkit-transform:translate(-50%, -50%) rotate(45deg);
+-moz-transform:translate(-50%, -50%) rotate(45deg);
+-ms-transform:translate(-50%, -50%) rotate(45deg);
+-o-transform:translate(-50%, -50%) rotate(45deg);
+transform:translate(-50%, -50%) rotate(45deg);
+```
+
+
+
+### 5.2 过渡(transition)
+
+#### 过渡相关属性
+
+* transition	检索或设置对象变换时的过渡。
+
+  > 注意：
+  >
+  > 如果只提供一个<time>参数，则为 <' transition-duration '> 的值定义；如果提供二个<time>参数，则第一个为 <' transition-duration '> 的值定义，第二个为 <' transition-delay '> 的值定义 
+  >
+  > 用法
+  > transition：<single-transition>[,<single-transition>]*<single-transition> = [ none | <single-transition-property> ] || <time> || <single-transition-timing-function> || <time>
+
+* transition-property	 设置对象中的参与过渡的属性
+
+  > 默认值为：all。默认为所有可以进行过渡的css属性。 
+  > 如果提供多个属性值，以逗号进行分隔。 
+  > 取值				
+  > 	none： 不指定过渡的css属性 
+  > 	all： 所有可以进行过渡的css属性 
+  > 	<IDENT>： 指定要进行过渡的css属性 
+  > 那些CSS属性可以被过渡		
+  > 	颜色属性
+  > 	具有长度值 百分比的属性
+  > 	值是数字的属性 如 z-index  opacity  outline-offset等
+  > 	变形系列属性
+  > 	阴影
+  > 	渐变		
+
+* transition-duration	设置对象过渡的持续时间		
+
+  如果提供多个属性值，以逗号进行分隔。
+
+* transition-timing-function   设置对象中过渡的动画类型	
+
+  > 取值				
+  > ease： 平滑过渡。等同于贝塞尔曲线(0.25, 0.1, 0.25, 1.0) 
+  > linear： 线性过渡。等同于贝塞尔曲线(0.0, 0.0, 1.0, 1.0) 
+  > ease-in： 由慢到快。等同于贝塞尔曲线(0.42, 0, 1.0, 1.0) 
+  > ease-out： 由快到慢。等同于贝塞尔曲线(0, 0, 0.58, 1.0) 
+  > ease-in-out： 由慢到快再到慢。等同于贝塞尔曲线(0.42, 0, 0.58, 1.0) 
+  > cubic-bezier(<number>, <number>, <number>, <number>)： 特定的贝塞尔曲线类型，4个数值需在[0, 1]区间内 http://cubic-bezier.com/
+  > steps(<integer>[, [ start | end ] ]?)： 接受两个参数的步进函数。第一个参数必须为正整数，指定函数的步数。第二个参数取值可以是start或end，指定每一步的值发生变化的时间点。第二个参数是可选的，默认值为end。 
+
+*  transition-delay	设置对象延迟过渡的时间
+
+#### CSS3触发过渡的条件
+
+* 伪元素触发			
+* 媒体查询			 
+* JavaScript触发			
+
+
+
+### 5.3 动画
+
+#### 关键帧
+
+帧——就是动画中最小单位的单幅影像画面，相当于电影胶片上的每一格镜头。
+
+#### 关键帧语法
+
+> @keyframes <identifier> { <keyframes-blocks> }
+> <keyframes-blocks>：[ [ from | to | <percentage> ]{ sRules } ][ [ , from | to | ]{ sRules } ]*
+
+```css
+
+```
 
 
 
