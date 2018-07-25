@@ -933,11 +933,15 @@ transform:translate(-50%, -50%) rotate(45deg);
 #### 常用的字体图标库	
 
 * 阿里图标	 http://www.iconfont.cn/		
+
 * Font Awesome http://fontawesome.dashgame.com/	
+
 * Glyphicons Halfings http://glyphicons.com/			
+
 * 字体图标制作工具	
 
-​	http://icomoon.io/app/#/select 				
-	http://www.iconfont.cn/help/iconmake.html		阿里图标
+  http://icomoon.io/app/#/select 				
+
+  http://www.iconfont.cn/help/iconmake.html		阿里图标
 
 ​		
