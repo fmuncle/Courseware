@@ -15,7 +15,7 @@
   * [第四章 事件Event](javascript/shi-jian-event.md)
 * [BOM/DOM](bomdom.md)
   * [浏览器对象模型BOM](bomdom/liu-lan-qi-dui-xiang-mo-xing-bom.md)
-  * 文档对象模型DOM
+  * [文档对象模型DOM](bomdom/wen-dang-dui-xiang-mo-xing-dom.md)
 * [jQuery](jquery.md)
 * [BootStrap](bootstrap.md)
 
