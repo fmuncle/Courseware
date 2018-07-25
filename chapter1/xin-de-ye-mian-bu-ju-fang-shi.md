@@ -281,3 +281,54 @@ display: flex | inline-flew
 
 ## 3 CSS4网格布局 Grid (了解)
 
+### 3.1 案例
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网格布局</title>
+	<style>
+		.container {
+			display: grid;
+			grid-template-columns: 150px 20px 150px 20px 150px;
+			grid-template-rows: auto 20px auto 20px auto;
+		}
+		.item { border:1px solid #999;}
+		.item-1 { background: #b03532; grid-column: 1; grid-row: 1; } 
+		.item-2 { background: #33a8a5; grid-column: 3; grid-row: 1; } 
+		.item-3 { background: #30997a; grid-column: 5; grid-row: 1; } 
+		.item-4 { background: #6a478f; grid-column: 1; grid-row: 3; } 
+		.item-5 { background: #da6f2b; grid-column: 3; grid-row: 3; } 
+		.item-6 { background: #3d8bb1; grid-column: 5; grid-row: 3; } 
+		.item-7 { background: #e03f3f; grid-column: 1; grid-row: 5; } 
+		.item-8 { background: #59a627; grid-column: 3; grid-row: 5; } 
+		.item-9 { background: #4464a1; grid-column: 5; grid-row: 5; }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item item-1">1</div>
+		<div class="item item-2">2</div>
+		<div class="item item-3">3</div>
+		<div class="item item-4">4</div>
+		<div class="item item-5">5</div>
+		<div class="item item-6">6</div>
+		<div class="item item-7">7</div>
+		<div class="item item-8">8</div>
+		<div class="item item-9">9</div>
+	</div>
+</body>
+</html>
+```
+
+### 3.2 专业术语
+
+![Grid](../images/grid.svg)
+
+* `1`表示Grid lines  网格线
+* `2`表示Columns  列
+* `3`表示rows    行
+* `4`表示`cells`  网格单元
+
