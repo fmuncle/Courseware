@@ -326,9 +326,9 @@ while (true) {
 
 * Number()
 * parseInt()
-	 parseFloat()	
-	 String()		
-	 Boolean()	
+* parseFloat()	
+* String()		
+* Boolean()	
 
 #### 自动类型转换
 
