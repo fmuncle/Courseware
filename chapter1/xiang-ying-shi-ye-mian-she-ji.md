@@ -166,7 +166,11 @@
 #### 用法三
 
 ```css
+@media mediatype and (media feature) {
+    CSS-Code;
+}
 
+@media (media feature)
 ```
 
 
