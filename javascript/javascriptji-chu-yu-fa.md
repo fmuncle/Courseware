@@ -585,6 +585,61 @@ for (var i = 0; i <= 10; i ++) {
 }
 ```
 
+#### for...in循环
+
+```js
+var obj = {name:'JIM', age:20}
+for (k in obj) {
+    console.log(k, obj[k])
+}
+//for...in 可以遍历 javaScript 的对象类型,一切皆对象
+```
+
+#### for...of 循环 (ES6新增)
+
+```js
+var list = [10,20,304,405,3]
+for (v of list) {
+    console.log(v)
+}
+//用于遍历JavaScript中的可迭代类型(Iterable) 主要包括 数组、类数组对象、字符串、Map、Set、Anguments、NodeList等 
+```
+
+
+
+### 6.3 其他语句
+
+#### 跳转语句
+
+* break语句		结束整个循环
+* continue语句		结束当前循环
+* return语句		返回函数值
+
+#### 异常处理语句
+
+* throw 抛出异常
+* try/catch/finally
+
+```js
+
+try {
+    tryCode - 尝试执行代码块
+}
+catch(err) {
+    catchCode - 捕获错误的代码块
+} 
+finally {
+    finallyCode - 无论 try / catch 结果如何都会执行的代码块
+}
+```
+
+#### 严格模式
+
+```js
+"use strict"
+code...
+```
+
 
 
 
