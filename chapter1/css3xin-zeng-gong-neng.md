@@ -543,3 +543,146 @@ background: bg-image bg-position / bg-size bg-repeat bg-attachment bg-origin bg-
   > round： 指定用平铺方式来填充边框背景图。图片会根据边框的尺寸动态调整图片的大小直至正好可以铺满整个边框。 
   > space： 指定用平铺方式来填充边框背景图。图片会根据边框的尺寸动态调整图片的之间的间距直至正好可以铺满整个边框。 	
 
+
+
+## 5 CSS3变换/过渡/动画
+
+### 5.1 变化(transform)
+
+#### 相关属性
+
+* transform		
+
+  > 设置或检索对象的转换。 
+  >
+  > 取值
+  >
+  > none  (默认值)无转换
+  >
+  > 2D Transform Functions：
+  > 	matrix()： 以一个含六值的(a,b,c,d,e,f)变换矩阵的形式指定一个2D变换，相当于直接应用一个[a,b,c,d,e,f]变换矩阵 
+  > 	translate()： 指定对象的2D translation（2D平移）。第一个参数对应X轴，第二个参数对应Y轴。如果第二个参数未提供，则默认值为0 
+  > 	translatex()： 指定对象X轴（水平方向）的平移 
+  > 	translatey()： 指定对象Y轴（垂直方向）的平移 
+  > 	rotate()： 指定对象的2D rotation（2D旋转），需先有 <' transform-origin '> 属性的定义 
+  > 	scale()： 指定对象的2D scale（2D缩放）。第一个参数对应X轴，第二个参数对应Y轴。如果第二个参数未提供，则默认取第一个参数的值 
+  > 	scalex()： 指定对象X轴的（水平方向）缩放 
+  > 	scaley()： 指定对象Y轴的（垂直方向）缩放 
+  > 	skew()： 指定对象skew transformation（斜切扭曲）。第一个参数对应X轴，第二个参数对应Y轴。如果第二个参数未提供，则默认值为0 
+  > 	skewx()： 指定对象X轴的（水平方向）扭曲 
+  > 	skewy()： 指定对象Y轴的（垂直方向）扭曲 
+  >
+  > 3D Transform Functions：
+  > 	matrix3d()： 以一个4x4矩阵的形式指定一个3D变换 
+  > 	translate3d()： 指定对象的3D位移。第1个参数对应X轴，第2个参数对应Y轴，第3个参数对应Z轴，参数不允许省略 
+  > 	translatez()： 指定对象Z轴的平移 
+  > 	rotate3d()： 指定对象的3D旋转角度，其中前3个参数分别表示旋转的方向x,y,z，第4个参数表示旋转的角度，参数不允许省略 
+  > 	rotatex()： 指定对象在x轴上的旋转角度 
+  > 	rotatey()： 指定对象在y轴上的旋转角度 
+  > 	rotatez()： 指定对象在z轴上的旋转角度 
+  > 	scale3d()： 指定对象的3D缩放。第1个参数对应X轴，第2个参数对应Y轴，第3个参数对应Z轴，参数不允许省略 
+  > 	scalez()： 指定对象的z轴缩放 
+  > 	perspective()： 指定透视距离 	
+
+
+
+* transform-origin	
+
+  > 设置或检索对象以某个原点进行转换。 
+  > 用法
+  > 	如果提供两个值，第一个用于横坐标，第二个用于纵坐标。 
+  > 	如果只提供一个，该值将用于横坐标；纵坐标将默认为50%。 
+  > 	3D变形需要制定Z坐标 第三个参数值
+  > 取值
+  > 	left  right  center   <lenght>  <percentage>
+  > 	top bottom  center   <lenght>  <percentage>	
+
+* transform-style	
+
+  > 指定某元素的子元素是（看起来）位于三维空间内，还是在该元素所在的平面内被扁平化。 
+  > flat： (默认)指定子元素位于此元素所在平面内 
+  > preserve-3d： 指定子元素定位在三维空间内 
+
+* perspective
+
+  > 指定观察者与「z=0」平面的距离，使具有三维位置变换的元素产生透视效果。「z>0」的三维元素比正常大，而「z<0」时则比正常小，大小程度由该属性的值决定。 
+  >
+  > none： 不指定透视 
+  > <length>： 指定观察者距离「z=0」平面的距离，为元素及其内容应用透视变换。不允许负值 
+
+* perspective-origin
+
+  > 设置透视点的位置
+  >
+  > 用法 
+  >
+  > ​	该属性提供2个参数值。 
+  > 	如果提供两个，第一个用于横坐标，第二个用于纵坐标。 
+  > 	如果只提供一个，该值将用于横坐标；纵坐标将默认为center。 
+  > 取值
+  > 	left  right  center   <lenght>  <percentage>
+  > 	top bottom  center   <lenght>  <percentage>	
+
+* backface-visibility	
+
+  > 指定元素背面面向用户时是否可见。
+  > 决定一个元素背面面向用户时是否可见，需要直接在该元素上定义 <' backface-visibility '> 属性，而不能在其父元素上，因为该属性默认为不可继承。 
+  > 取值
+  > 	visible： (默认)指定元素背面可见，允许显示正面的镜像。 
+  > 	hidden： 指定元素背面不可见 
+
+#### 2D变换
+
+##### 2D位移
+
+* translate(x, y)	
+* translatex()	
+* translatey()	
+
+##### 2D缩放
+
+* scale(x, y)	
+* scalex()		
+* scaley()		
+
+##### 2D旋转
+
+* rotate(deg)	
+
+##### 2D倾斜
+
+* skew(x,y)	
+* skewx()		
+* skewy()		
+
+##### 2D矩阵
+
+* matrix()	
+
+#### 3D变换
+
+##### 3D位移	
+
+* translate3d(x, y, z)
+* translatez()
+
+##### 3D缩放	
+
+* scale3d()
+* scalez()
+
+##### 3D旋转	
+
+* rotate3d(x, y, z, a)
+* rotatex()
+* rotatey()
+* rotatex()
+
+##### 3D矩阵
+
+* matrix3d()
+
+#### 多重变形
+
+
+
