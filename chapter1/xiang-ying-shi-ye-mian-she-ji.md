@@ -1,6 +1,6 @@
+# 响应式网页设计
 
-
-![响应式网页设计](../images/response.png)
+<img src="../images/response.png" width="100%">
 
 
 
