@@ -1,5 +1,10 @@
 {
     "title": "前端开发",
     "author": "付铭",
-    "description": "Python全栈-前端开发"
+    "description": "Python全栈-前端开发",
+    "links" : {
+        "sidebar" : {
+        "Home" : "https://github.com/atlantis1024/gitbook-notes"
+        }
+    }
 }
