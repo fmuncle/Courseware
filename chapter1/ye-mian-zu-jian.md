@@ -26,8 +26,7 @@
   ```css
   border: 边框宽度  边框样式  边框颜色
   ```
-
-	 border-style	    border-top-style | border-right-style | * border-bottom-style | border-left-style
+* border-style	    border-top-style | border-right-style | * border-bottom-style | border-left-style
   ```
   dotted   点线
   dashed  虚线
@@ -50,11 +49,11 @@
   
   例：background:red url('./123.png') no-repeat 100px 10px;
   ```
-	 background-color	设置背景色，或设置为transparent（透明）
-	 background-image	背景图片 url  或者 none
-	 background-repeat	背景重复  repeat | repeat-x | repeat-y | no-repeat
-	 background-attachment	背景附件 scroll | fixed
-	 background-position		背景位置
+* background-color	设置背景色，或设置为transparent（透明）
+* background-image	背景图片 url  或者 none
+* background-repeat	背景重复  repeat | repeat-x | repeat-y | no-repeat
+* background-attachment	背景附件 scroll | fixed
+* background-position		背景位置
 
   ```
   background-position: 水平方向 垂直方向
@@ -208,11 +207,8 @@ area 元素永远嵌套在 map 元素内部。area 元素可定义图像映射�
 ### area标签
 
 * alt  规定区域的替代文本。如果使用 href 属性，则该属性是必需的。
-
-   href	URL	规定区域的目标 URL。
-
-    coords	规定区域的坐标。
-
+* href	URL	规定区域的目标 URL。
+* coords	规定区域的坐标。
 * shape 规定区域的形状
 
   ```
@@ -220,7 +216,6 @@ area 元素永远嵌套在 map 元素内部。area 元素可定义图像映射�
   circle 圆形
   poly  多边形
   ```
-
 * target -- 用来指出哪个窗口或框架应该被此链接打开 
 
 
@@ -231,7 +226,7 @@ area 元素永远嵌套在 map 元素内部。area 元素可定义图像映射�
 
 * `<ul></ul>`	 代表HTML无序列表 ，里面每一列表项使用`<li>`标签定义
 
-	 `<ol></ol>`	代表HTML有序列表 ，里面每一列表项使用<li>标签定义
+* `<ol></ol>`	代表HTML有序列表 ，里面每一列表项使用<li>标签定义
 
   ```
   属性
@@ -263,14 +258,14 @@ area 元素永远嵌套在 map 元素内部。area 元素可定义图像映射�
   upper-alpha  大写字母		
   ```
 
-	 list-style-position	 位置
+* list-style-position	 位置
 
   ```
   inside   标示在li里面
   outside  标示在li外面
   ```
 
-	 list-style-image	 使用图片 url(./123.gif)
+* list-style-image	 使用图片 url(./123.gif)
 
 
 
@@ -299,23 +294,23 @@ area 元素永远嵌套在 map 元素内部。area 元素可定义图像映射�
   
   ```
 
-	 border-collapse   	表格的行和单元格的边是合并还是独立
+* border-collapse   	表格的行和单元格的边是合并还是独立
 
   ```
   separate (默认)  独立
   collapse  合并
   ```
 
-	 border-spacing   	当表格边框独立时，行和单元格的边框在横向和纵向上的间距
+* border-spacing   	当表格边框独立时，行和单元格的边框在横向和纵向上的间距
 
-	 caption-side caption	在table上面还是下面
+* caption-side caption	在table上面还是下面
 
   ```
   top	
   bottom
   ```
 
-	 empty-cells  		没有内容的单元格隐
+* empty-cells  		没有内容的单元格隐
 
 * 藏还是显示
 
