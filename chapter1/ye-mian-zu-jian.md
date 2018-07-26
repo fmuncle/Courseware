@@ -38,7 +38,7 @@
   inset      内嵌效果
   outset   外凸效果 
   ```
-	 border-color	 边框颜色   border-left-color | border-right-color | border-top-color | border-bottom-color
+* border-color	 边框颜色   border-left-color | border-right-color | border-top-color | border-bottom-color
 * border-width    边框宽度  border-left-width | border-right-width | border-top-width | border-bottom-width
 
 ### 1.4 背景
